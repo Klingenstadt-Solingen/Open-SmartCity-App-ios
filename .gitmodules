@@ -1,0 +1,90 @@
+[submodule "modules/OSCAEssentials"]
+	path = modules/OSCAEssentials
+  url = https://git-dev.solingen.de/smartcityapp/modules/oscaessentials-ios.git
+[submodule "modules/OSCANetworkService"]
+	path = modules/OSCANetworkService
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscanetworkservice-ios.git
+[submodule "modules/OSCATestCaseExtension"]
+	path = modules/OSCATestCaseExtension
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscatestcaseextension-ios.git
+[submodule "modules/OSCAPressReleases"]
+	path = modules/OSCAPressReleases
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscapressreleases-ios.git
+[submodule "modules/OSCAPressReleasesUI"]
+	path = modules/OSCAPressReleasesUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscapressreleasesui-ios.git
+[submodule "modules/OSCAContact"]
+	path = modules/OSCAContact
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscacontact-ios.git
+[submodule "modules/OSCAContactUI"]
+	path = modules/OSCAContactUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscacontactui-ios.git
+[submodule "modules/OSCAEvents"]
+	path = modules/OSCAEvents
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaevents-ios.git
+[submodule "modules/OSCAEventsUI"]
+	path = modules/OSCAEventsUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaeventsui-ios.git
+[submodule "modules/OSCAMap"]
+	path = modules/OSCAMap
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscamap-ios.git
+[submodule "modules/OSCAMapUI"]
+	path = modules/OSCAMapUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscamapui-ios.git
+[submodule "modules/OSCAWaste"]
+	path = modules/OSCAWaste
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscawaste-ios.git
+[submodule "modules/OSCAWasteUI"]
+	path = modules/OSCAWasteUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscawasteui-ios.git
+[submodule "modules/OSCAPublicTransport"]
+	path = modules/OSCAPublicTransport
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscapublictransport-ios.git
+[submodule "modules/OSCAPublicTransportUI"]
+	path = modules/OSCAPublicTransportUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscapublictransportui-ios.git
+[submodule "modules/OSCACoworking"]
+	path = modules/OSCACoworking
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscacoworking-ios.git
+[submodule "modules/OSCACoworkingUI"]
+	path = modules/OSCACoworkingUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscacoworkingui-ios.git
+[submodule "modules/OSCAJobs"]
+	path = modules/OSCAJobs
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscajobs-ios.git
+[submodule "modules/OSCAJobsUI"]
+	path = modules/OSCAJobsUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscajobsui-ios.git
+[submodule "modules/OSCACulture"]
+	path = modules/OSCACulture
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaculture-ios.git
+[submodule "modules/OSCACultureUI"]
+	path = modules/OSCACultureUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscacultureui-ios.git
+[submodule "modules/OSCASafariView"]
+	path = modules/OSCASafariView
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscasafariview-ios.git
+[submodule "modules/OSCAMobilityMonitor"]
+	path = modules/OSCAMobilityMonitor
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscamobilitymonitor-ios.git
+[submodule "modules/OSCAMobilityMonitorUI"]
+	path = modules/OSCAMobilityMonitorUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscamobilitymonitorui-ios.git
+[submodule "modules/OSCAWeather"]
+	path = modules/OSCAWeather
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaweather-ios.git
+[submodule "modules/OSCAWeatherUI"]
+	path = modules/OSCAWeatherUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaweatherui-ios.git
+[submodule "modules/OSCADefect"]
+	path = modules/OSCADefect
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscadefect-ios.git
+[submodule "modules/OSCADefectUI"]
+	path = modules/OSCADefectUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscadefectui-ios.git
+[submodule "modules/OSCAEnvironmentUI"]
+	path = modules/OSCAEnvironmentUI
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscaenvironment-ios.git
+[submodule "modules/OSCADistrict"]
+	path = modules/OSCADistrict
+	url = https://git-dev.solingen.de/smartcityapp/modules/oscadistrict-ios.git

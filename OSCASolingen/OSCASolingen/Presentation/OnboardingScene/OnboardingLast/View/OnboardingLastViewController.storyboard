@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Last View Controller-->
+        <scene sceneID="z3g-i8-UBx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingLastViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xIH-P8-2Jz" customClass="OnboardingLastViewController" customModule="OSCASolingen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4w4-wM-lRU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_welcoming_xvuq-svg" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-re-0R4">
+                                <rect key="frame" x="103.5" y="64" width="207" height="357"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Es kann losgehen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC1-Hw-atL">
+                                <rect key="frame" x="32" y="437" width="221" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PH-QT-lBm">
+                                <rect key="frame" x="32" y="481" width="350" height="122"/>
+                                <string key="text">Vielen Dank, dass du dir die Zeit genommen hast.
+
+Hinterlasse uns gerne ein Feedback, wie du unsere App findest und was du dir für die nächste Version wünschst.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-T4-hGf">
+                                <rect key="frame" x="32" y="804" width="170.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="secondaryColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng4-fc-2Ib">
+                                <rect key="frame" x="32" y="748" width="350" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QaG-X5-nqh"/>
+                                </constraints>
+                                <state key="normal" title="Los geht's">
+                                    <color key="titleColor" name="primaryColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTouch:" destination="xIH-P8-2Jz" eventType="touchUpInside" id="Ab5-Bk-n66"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8GQ-Bb-h8F"/>
+                        <color key="backgroundColor" name="primaryColor"/>
+                        <constraints>
+                            <constraint firstItem="8GQ-Bb-h8F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gC1-Hw-atL" secondAttribute="trailing" constant="16" id="2Do-ON-D2t"/>
+                            <constraint firstItem="ng4-fc-2Ib" firstAttribute="leading" secondItem="7PH-QT-lBm" secondAttribute="leading" id="3El-r2-QVG"/>
+                            <constraint firstItem="H9R-re-0R4" firstAttribute="width" secondItem="4w4-wM-lRU" secondAttribute="width" multiplier="0.5" id="8wp-br-XIv"/>
+                            <constraint firstItem="gC1-Hw-atL" firstAttribute="top" secondItem="H9R-re-0R4" secondAttribute="bottom" constant="16" id="Dfv-48-6uJ"/>
+                            <constraint firstItem="ng4-fc-2Ib" firstAttribute="trailing" secondItem="7PH-QT-lBm" secondAttribute="trailing" id="EUw-9N-mxC"/>
+                            <constraint firstItem="Zgc-T4-hGf" firstAttribute="top" secondItem="ng4-fc-2Ib" secondAttribute="bottom" constant="16" id="Eoc-O6-sk7"/>
+                            <constraint firstItem="gC1-Hw-atL" firstAttribute="leading" secondItem="8GQ-Bb-h8F" secondAttribute="leading" constant="32" id="NA3-ZX-tb3"/>
+                            <constraint firstItem="8GQ-Bb-h8F" firstAttribute="trailing" secondItem="7PH-QT-lBm" secondAttribute="trailing" constant="32" id="UUy-Zk-fn3"/>
+                            <constraint firstItem="H9R-re-0R4" firstAttribute="top" secondItem="8GQ-Bb-h8F" secondAttribute="top" constant="16" id="ZvG-0c-q5K"/>
+                            <constraint firstItem="ng4-fc-2Ib" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7PH-QT-lBm" secondAttribute="bottom" constant="32" id="k9w-k5-wOi"/>
+                            <constraint firstItem="8GQ-Bb-h8F" firstAttribute="bottom" secondItem="Zgc-T4-hGf" secondAttribute="bottom" constant="32" id="kOu-yt-PV1"/>
+                            <constraint firstItem="7PH-QT-lBm" firstAttribute="leading" secondItem="gC1-Hw-atL" secondAttribute="leading" id="mzy-pv-tFP"/>
+                            <constraint firstItem="H9R-re-0R4" firstAttribute="centerX" secondItem="8GQ-Bb-h8F" secondAttribute="centerX" id="oB4-bn-FfO"/>
+                            <constraint firstItem="Zgc-T4-hGf" firstAttribute="leading" secondItem="7PH-QT-lBm" secondAttribute="leading" id="onI-Xk-kwM"/>
+                            <constraint firstItem="7PH-QT-lBm" firstAttribute="top" secondItem="gC1-Hw-atL" secondAttribute="bottom" constant="8" id="uHo-0i-fmW"/>
+                            <constraint firstItem="gC1-Hw-atL" firstAttribute="centerY" secondItem="8GQ-Bb-h8F" secondAttribute="centerY" id="uMu-p2-WLE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="7PH-QT-lBm" id="d6O-jg-187"/>
+                        <outlet property="headerLabel" destination="gC1-Hw-atL" id="mKA-Mg-e3c"/>
+                        <outlet property="pagedControl" destination="Zgc-T4-hGf" id="kav-X0-ewt"/>
+                        <outlet property="startButton" destination="ng4-fc-2Ib" id="jIl-CO-f1w"/>
+                        <outlet property="startImageView" destination="H9R-re-0R4" id="fiM-tM-gli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGJ-3F-fxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3829" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="undraw_welcoming_xvuq-svg" width="1100" height="674"/>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="0.83529411764705885" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

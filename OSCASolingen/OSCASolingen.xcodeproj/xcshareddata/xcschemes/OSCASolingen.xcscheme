@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1430"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "copy secrets"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;# /Users/sbreidenbach/XCodeProjects/GIT/git-Dev-solingen-de/SmartcityApp/oscacore-ios/development/modules/OSCANetworkService/OSCANetworkService/scripts/OSCANetworkServiceTestCasePreBuild.sh&#10;echo &quot;WORKSPACE_PATH: ${WORKSPACE_PATH%.swiftpm/xcode/package.xcworkspace}&quot;&#10;echo &quot;BUILT_PRODUCTS_DIR: ${BUILT_PRODUCTS_DIR%/Build*}&quot;&#10;echo &quot;PLATFORM_NAME: ${PLATFORM_NAME}&quot;&#10;# bash ${BUILT_PRODUCTS_DIR%/Build*}/SourcePackages/checkouts/oscatestcaseextension-ios/OSCATestCaseExtension/scripts/OSCATestCasePreBuild.sh \&#10;SPM \&#10;.oscasecrets/OSCASG/version_3.0.2&#10;bash ${BUILT_PRODUCTS_DIR%/Build*}/SourcePackages/checkouts/oscaessentials-ios/OSCAEssentials/scripts/OSCAEssentialsPreBuild.sh \&#10;SPM \&#10;.oscasecrets/OSCASG/version_3.0.2&#10;echo &quot;Script executed!&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "11E11313284767D400D9248C"
+                     BuildableName = "Solingen.app"
+                     BlueprintName = "Solingen"
+                     ReferencedContainer = "container:Solingen.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1121B41628BD220A009A38CE"
+               BuildableName = "OSCASolingen.framework"
+               BlueprintName = "OSCASolingen"
+               ReferencedContainer = "container:OSCASolingen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1121B41E28BD220B009A38CE"
+               BuildableName = "OSCASolingenTests.xctest"
+               BlueprintName = "OSCASolingenTests"
+               ReferencedContainer = "container:OSCASolingen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1121B41E28BD220B009A38CE"
+               BuildableName = "OSCASolingenTests.xctest"
+               BlueprintName = "OSCASolingenTests"
+               ReferencedContainer = "container:OSCASolingen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES"
+      showNonLocalizedStrings = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1121B41628BD220A009A38CE"
+            BuildableName = "OSCASolingen.framework"
+            BlueprintName = "OSCASolingen"
+            ReferencedContainer = "container:OSCASolingen.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1121B41628BD220A009A38CE"
+            BuildableName = "OSCASolingen.framework"
+            BlueprintName = "OSCASolingen"
+            ReferencedContainer = "container:OSCASolingen.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Debug"
+      customArchiveName = "Solingen dev"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

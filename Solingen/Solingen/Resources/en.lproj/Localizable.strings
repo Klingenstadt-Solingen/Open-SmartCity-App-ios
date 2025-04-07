@@ -1,0 +1,96 @@
+"SHOW_ALL_BUTTON" = "Show all";
+"show_district %@" = "show %@";
+
+// MARK: - Onboarding Scene
+
+/* Onboarding */
+// The content for onboarding
+"onboarding_content" = "Thank you for downloading this app. Before you can use the app, we have a few things to talk about.";
+
+/* Onboarding Privacy Advice */
+// The title for onboarding privacy advice
+"onboarding_privacy_advice_title" = "Privacy policy";
+// The content for onboarding privacy advice
+"onboarding_privacy_advice_content" = "We want you to know that your data is safe with us. You can read our privacy policy on the next page. By using this app you agree to our privacy policy.";
+
+/* Onboarding Privacy Policy */
+// The title for onboarding privacy policy
+"onboarding_privacy_policy_title" = "Privacy policy";
+
+/* Onboarding Notification */
+// The title for onboarding notification
+"onboarding_notification_title" = "Notifications";
+// The content for onboarding notification
+"onboarding_notification_content" = "We'd love to keep you updated on what's happening in our city. For this we need your consent.";
+// The title for onboarding notification button state allow
+"onboarding_notification_allow" = "Allow notifications";
+// The title for onboarding notification button state activated
+"onboarding_notification_activated" = "Notifications enabled";
+// The title for onboarding notification button state deactivated
+"onboarding_notification_deactivated" = "Notifications disabled";
+
+/* Onboarding Location Permission */
+// The title for onboarding location permission
+"onboarding_location_permission_title" = "Location";
+// The content for onboarding location permission
+"onboarding_location_permission_content" = "In order to show you information about your current location, we need your consent.\nDon't worry, we don't store your location.";
+// The title for onboarding location permission button state share
+"onboarding_location_permission_share" = "Share location";
+// The title for onboarding location permission button state activated
+"onboarding_location_permission_activated" = "Location sharing enabled";
+// The title for onboarding location permission button state deactivated
+"onboarding_location_permission_deactivated" = "Location sharing disabled";
+// The title for onboarding location permission alert
+"onboarding_location_permission_alert_title" = "Location sharing disabled!";
+// The message for onboarding location permission alert
+"onboarding_location_permission_alert_message" = "You have disabled your location sharing in the phone settings. You can't share your location with us until you change the setting.";
+
+/* Onboarding Last */
+// The title for onboarding last
+"onboarding_last_title" = "Ready to go";
+// The content for onboarding last
+"onboarding_last_content" = "Thank you for your time.\n\nFeel free to leave us feedback via the contact form on what you think of our app and what you wish to see in the next version.";
+// The title for onboarding last start button
+"onboarding_last_start_title" = "Here we go";
+
+// MARK: - Home Tab Root Scene
+// root tab bar item home title
+"tabbaritem_home_title" = "Home";
+// root tab bar item corona title
+"tabbaritem_corona_title" = "Corona";
+// root tab bar item townhall title
+"tabbaritem_townhall_title" = "Townhall";
+// root tab bar item service title
+"tabbaritem_service_title" = "Services";
+// root tab bar item press title
+"tabbaritem_press_title" = "Press";
+// root tab bar item settings title
+"tabbaritem_settings_title" = "Settings";
+
+// MARK: - OSCASGError descriptions copy for pre OSCASolingen Error descriptions
+// network invalid request error description
+"oscasgerror_networkInvalidRequest" = "There is a network Problem: invalid request!";
+
+// network invalid response error description
+"oscasgerror_networkInvalidResponse" = "There is a network Problem: invalid response!";
+
+// network data loading error description
+"oscasgerror_networkDataLoading %d" = "There is a network Problem: data loading failed with status code %d";
+
+// network JSON decoding error description
+"oscasgerror_networkJSONDecoding %@" = "There is a network Problem: JSON decoding: %@";
+
+// network internet connection error description
+"oscasgerror_networkInternetConnection" = "There is a network Problem: Internet connection failure!";
+
+// network unspecified error description
+"oscasgerror_networkUnspecified" = "There is an unspecified network Problem!";
+
+// parse backend error description
+"oscasgerror_parseErrorMessage %@" = "There is a problem with the backend: %@";
+
+// parse backend installation error description
+"oscasgerror_parseInstallationCorrupt" = "There is a problem with the backend installation";
+
+// application initialization error description
+"oscasgerror_applicationInitialization %@" = "There is a problem with the app initialization: %@";

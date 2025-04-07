@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Notification View Controller-->
+        <scene sceneID="R5V-CW-Ute">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingNotificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KgD-Hg-Rch" customClass="OnboardingNotificationViewController" customModule="OSCASolingen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBE-Na-ybn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_my_notifications_rjej-svg" translatesAutoresizingMaskIntoConstraints="NO" id="26q-zI-Ach">
+                                <rect key="frame" x="103.5" y="64" width="207" height="357"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benachrichtigungen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-Z1-fOm">
+                                <rect key="frame" x="32" y="437" width="255" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgg-H6-f0y">
+                                <rect key="frame" x="32" y="481" width="316" height="81.5"/>
+                                <string key="text">Wir würden dich gerne über die Dinge, die in unserer Stadt passieren, auf dem Laufenden halten. Dafür benötigen wir dein Einverständnis.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3p-CY-7dG">
+                                <rect key="frame" x="32" y="748" width="316" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pyV-pl-5VV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Nachrichten erlauben">
+                                    <color key="titleColor" name="primaryColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="grantButtonTouch:" destination="KgD-Hg-Rch" eventType="touchUpInside" id="mav-39-Vpk"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="30w-Yo-FyL">
+                                <rect key="frame" x="32" y="804" width="170.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="secondaryColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-Fc-XeW">
+                                <rect key="frame" x="348" y="755" width="50" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3wg-tH-ZdV"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTouch:" destination="KgD-Hg-Rch" eventType="touchUpInside" id="kWx-fc-wX0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m7c-2M-Rga"/>
+                        <color key="backgroundColor" name="primaryColor"/>
+                        <constraints>
+                            <constraint firstItem="Pgg-H6-f0y" firstAttribute="top" secondItem="Nxb-Z1-fOm" secondAttribute="bottom" constant="8" id="04r-P5-6Zz"/>
+                            <constraint firstItem="vjB-Fc-XeW" firstAttribute="leading" secondItem="i3p-CY-7dG" secondAttribute="trailing" id="Ayv-kH-xAy"/>
+                            <constraint firstItem="30w-Yo-FyL" firstAttribute="top" secondItem="i3p-CY-7dG" secondAttribute="bottom" constant="16" id="Bd9-z3-REp"/>
+                            <constraint firstItem="vjB-Fc-XeW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="30w-Yo-FyL" secondAttribute="trailing" id="Dcv-6t-jNV"/>
+                            <constraint firstItem="m7c-2M-Rga" firstAttribute="trailing" secondItem="vjB-Fc-XeW" secondAttribute="trailing" constant="16" id="J0n-lK-rFN"/>
+                            <constraint firstItem="m7c-2M-Rga" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nxb-Z1-fOm" secondAttribute="trailing" constant="16" id="JRR-oW-F7H"/>
+                            <constraint firstItem="Nxb-Z1-fOm" firstAttribute="leading" secondItem="m7c-2M-Rga" secondAttribute="leading" constant="32" id="JmS-SL-YUl"/>
+                            <constraint firstItem="Pgg-H6-f0y" firstAttribute="leading" secondItem="Nxb-Z1-fOm" secondAttribute="leading" id="KyS-wV-aUt"/>
+                            <constraint firstItem="26q-zI-Ach" firstAttribute="centerX" secondItem="m7c-2M-Rga" secondAttribute="centerX" id="L0J-Tz-8n8"/>
+                            <constraint firstItem="m7c-2M-Rga" firstAttribute="bottom" secondItem="30w-Yo-FyL" secondAttribute="bottom" constant="32" id="LcL-LE-A98"/>
+                            <constraint firstItem="Nxb-Z1-fOm" firstAttribute="top" secondItem="26q-zI-Ach" secondAttribute="bottom" constant="16" id="N1J-ow-1jc"/>
+                            <constraint firstItem="i3p-CY-7dG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Pgg-H6-f0y" secondAttribute="bottom" constant="16" id="PIh-hc-Mf7"/>
+                            <constraint firstItem="m7c-2M-Rga" firstAttribute="bottom" secondItem="vjB-Fc-XeW" secondAttribute="bottom" constant="32" id="Px0-Gp-A9p"/>
+                            <constraint firstItem="i3p-CY-7dG" firstAttribute="leading" secondItem="Nxb-Z1-fOm" secondAttribute="leading" id="WFn-H0-qbD"/>
+                            <constraint firstItem="vjB-Fc-XeW" firstAttribute="width" secondItem="vjB-Fc-XeW" secondAttribute="height" multiplier="1:1.5" id="dTk-Lh-awH"/>
+                            <constraint firstItem="26q-zI-Ach" firstAttribute="width" secondItem="cBE-Na-ybn" secondAttribute="width" multiplier="0.5" id="if1-H7-sCJ"/>
+                            <constraint firstItem="Nxb-Z1-fOm" firstAttribute="centerY" secondItem="m7c-2M-Rga" secondAttribute="centerY" id="jbz-gf-13z"/>
+                            <constraint firstItem="26q-zI-Ach" firstAttribute="top" secondItem="m7c-2M-Rga" secondAttribute="top" constant="16" id="sNB-OL-7RJ"/>
+                            <constraint firstItem="vjB-Fc-XeW" firstAttribute="leading" secondItem="Pgg-H6-f0y" secondAttribute="trailing" id="tG7-ow-9Y5"/>
+                            <constraint firstItem="30w-Yo-FyL" firstAttribute="leading" secondItem="Pgg-H6-f0y" secondAttribute="leading" id="yCO-zf-9l4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="Pgg-H6-f0y" id="TBx-yV-3o5"/>
+                        <outlet property="grantButton" destination="i3p-CY-7dG" id="9TE-en-Ryx"/>
+                        <outlet property="headerLabel" destination="Nxb-Z1-fOm" id="rYh-RR-eTh"/>
+                        <outlet property="nextButton" destination="vjB-Fc-XeW" id="mS9-Ei-Fh5"/>
+                        <outlet property="notificationImage" destination="26q-zI-Ach" id="eWS-rg-Dig"/>
+                        <outlet property="pagedControl" destination="30w-Yo-FyL" id="w7J-uP-rnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mvw-mP-z5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="undraw_my_notifications_rjej-svg" width="736" height="728"/>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="0.83529411764705885" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

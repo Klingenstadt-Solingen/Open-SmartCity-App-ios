@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "modules">
+      <FileRef
+         location = "group:modules/OSCAEnvironmentUI/OSCAEnvironmentUI/OSCAEnvironmentUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCADistrict/OSCADistrict/OSCADistrict.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAContact/OSCAContact/OSCAContact.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAContactUI/OSCAContactUI/OSCAContactUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCACoworking/OSCACoworking/OSCACoworking.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCACoworkingUI/OSCACoworkingUI/OSCACoworkingUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCACulture/OSCACulture/OSCACulture.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCACultureUI/OSCACultureUI/OSCACultureUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCADefect/OSCADefect/OSCADefect.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCADefectUI/OSCADefectUI/OSCADefectUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAEssentials/OSCAEssentials/OSCAEssentials.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAEvents/OSCAEvents/OSCAEvents.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAEventsUI/OSCAEventsUI/OSCAEventsUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAJobs/OSCAJobs/OSCAJobs.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAJobsUI/OSCAJobsUI/OSCAJobsUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAMap/OSCAMap/OSCAMap.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAMapUI/OSCAMapUI/OSCAMapUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAMobilityMonitor/OSCAMobility/OSCAMobility.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAMobilityMonitorUI/OSCAMobilityUI/OSCAMobilityUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCANetworkService/OSCANetworkService/OSCANetworkService.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAPressReleases/OSCAPressReleases/OSCAPressReleases.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAPressReleasesUI/OSCAPressReleasesUI/OSCAPressReleasesUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAPublicTransport/OSCAPublicTransport/OSCAPublicTransport.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAPublicTransportUI/OSCAPublicTransportUI/OSCAPublicTransportUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCASafariView/OSCASafariView/OSCASafariView.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCATestCaseExtension/OSCATestCaseExtension/OSCATestCaseExtension.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAWaste/OSCAWaste/OSCAWaste.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAWasteUI/OSCAWasteUI/OSCAWasteUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAWeather/OSCAWeather/OSCAWeather.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:modules/OSCAWeatherUI/OSCAWeatherUI/OSCAWeatherUI.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:SupportingFiles"
+      name = "SupportingFiles">
+      <FileRef
+         location = "group:API_Develop.plist">
+      </FileRef>
+      <FileRef
+         location = "group:API_Release.plist">
+      </FileRef>
+      <FileRef
+         location = "group:Development.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Production.xcconfig">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:OSCASolingen/OSCASolingen.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Solingen/Solingen.xcodeproj">
+   </FileRef>
+</Workspace>

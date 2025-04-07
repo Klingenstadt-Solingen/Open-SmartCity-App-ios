@@ -1,0 +1,1784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1109D159292D3AD500CB244C /* SolingenApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1109D157292D3AD500CB244C /* SolingenApp.xcdatamodeld */; };
+		1109D169292D3AD700CB244C /* SolingenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D168292D3AD700CB244C /* SolingenAppTests.swift */; };
+		1109D173292D3AD700CB244C /* SolingenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D172292D3AD700CB244C /* SolingenAppUITests.swift */; };
+		1109D175292D3AD700CB244C /* SolingenAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D174292D3AD700CB244C /* SolingenAppUITestsLaunchTests.swift */; };
+		1109D187292D3CBC00CB244C /* AppDelegate+Deeplinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D185292D3CBB00CB244C /* AppDelegate+Deeplinking.swift */; };
+		1109D188292D3CBC00CB244C /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D186292D3CBB00CB244C /* Notification+Name.swift */; };
+		1109D18E292D3CD800CB244C /* AppDelegate+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D18B292D3CD700CB244C /* AppDelegate+Push.swift */; };
+		1109D18F292D3CD800CB244C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D18C292D3CD700CB244C /* AppDelegate.swift */; };
+		1109D190292D3CD800CB244C /* AppDelegate+StateRestauration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109D18D292D3CD700CB244C /* AppDelegate+StateRestauration.swift */; };
+		111D5F4728FD99AD00333596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D5F4528FD99AD00333596 /* LaunchScreen.storyboard */; };
+		114DAE402B1E04EE00F3AE01 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		114DAE412B1E04EE00F3AE01 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		114DAE422B1E04EE00F3AE01 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		114DAE432B1E04EE00F3AE01 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		1173D22E287D8FB10059778C /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173D22D287D8FB10059778C /* Notification+Name.swift */; };
+		11883D452B69260300F58582 /* AppDelegate+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11241C1828FFE269009B8C31 /* AppDelegate+ErrorHandling.swift */; };
+		118D6A3E2B6D31B900E87E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D5F4528FD99AD00333596 /* LaunchScreen.storyboard */; };
+		118D6A602B6D385A00E87E87 /* OSCAContact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A422B6D385A00E87E87 /* OSCAContact.framework */; };
+		118D6A612B6D385A00E87E87 /* OSCAContact.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A422B6D385A00E87E87 /* OSCAContact.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A622B6D385A00E87E87 /* OSCAContactUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A432B6D385A00E87E87 /* OSCAContactUI.framework */; };
+		118D6A632B6D385A00E87E87 /* OSCAContactUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A432B6D385A00E87E87 /* OSCAContactUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A642B6D385A00E87E87 /* OSCACoworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A442B6D385A00E87E87 /* OSCACoworking.framework */; };
+		118D6A652B6D385A00E87E87 /* OSCACoworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A442B6D385A00E87E87 /* OSCACoworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A662B6D385A00E87E87 /* OSCACoworkingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A452B6D385A00E87E87 /* OSCACoworkingUI.framework */; };
+		118D6A672B6D385A00E87E87 /* OSCACoworkingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A452B6D385A00E87E87 /* OSCACoworkingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A682B6D385A00E87E87 /* OSCACulture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A462B6D385A00E87E87 /* OSCACulture.framework */; };
+		118D6A692B6D385A00E87E87 /* OSCACulture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A462B6D385A00E87E87 /* OSCACulture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A6A2B6D385B00E87E87 /* OSCACultureUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A472B6D385A00E87E87 /* OSCACultureUI.framework */; };
+		118D6A6B2B6D385B00E87E87 /* OSCACultureUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A472B6D385A00E87E87 /* OSCACultureUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A6C2B6D385B00E87E87 /* OSCADefect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A482B6D385A00E87E87 /* OSCADefect.framework */; };
+		118D6A6D2B6D385B00E87E87 /* OSCADefect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A482B6D385A00E87E87 /* OSCADefect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A6E2B6D385B00E87E87 /* OSCADefectUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A492B6D385A00E87E87 /* OSCADefectUI.framework */; };
+		118D6A6F2B6D385B00E87E87 /* OSCADefectUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A492B6D385A00E87E87 /* OSCADefectUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A702B6D385B00E87E87 /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4A2B6D385A00E87E87 /* OSCAEssentials.framework */; };
+		118D6A712B6D385B00E87E87 /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4A2B6D385A00E87E87 /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A722B6D385B00E87E87 /* OSCAEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4B2B6D385A00E87E87 /* OSCAEvents.framework */; };
+		118D6A732B6D385B00E87E87 /* OSCAEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4B2B6D385A00E87E87 /* OSCAEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A742B6D385B00E87E87 /* OSCAEventsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4C2B6D385A00E87E87 /* OSCAEventsUI.framework */; };
+		118D6A752B6D385C00E87E87 /* OSCAEventsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4C2B6D385A00E87E87 /* OSCAEventsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A762B6D385C00E87E87 /* OSCAJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4D2B6D385A00E87E87 /* OSCAJobs.framework */; };
+		118D6A772B6D385C00E87E87 /* OSCAJobs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4D2B6D385A00E87E87 /* OSCAJobs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A782B6D385C00E87E87 /* OSCAJobsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4E2B6D385A00E87E87 /* OSCAJobsUI.framework */; };
+		118D6A792B6D385C00E87E87 /* OSCAJobsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4E2B6D385A00E87E87 /* OSCAJobsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A7A2B6D385C00E87E87 /* OSCAMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4F2B6D385A00E87E87 /* OSCAMap.framework */; };
+		118D6A7B2B6D385C00E87E87 /* OSCAMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A4F2B6D385A00E87E87 /* OSCAMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A7C2B6D385C00E87E87 /* OSCAMapUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A502B6D385A00E87E87 /* OSCAMapUI.framework */; };
+		118D6A7D2B6D385C00E87E87 /* OSCAMapUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A502B6D385A00E87E87 /* OSCAMapUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A7E2B6D385C00E87E87 /* OSCAMobility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A512B6D385A00E87E87 /* OSCAMobility.framework */; };
+		118D6A7F2B6D385C00E87E87 /* OSCAMobility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A512B6D385A00E87E87 /* OSCAMobility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A802B6D385D00E87E87 /* OSCAMobilityUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A522B6D385A00E87E87 /* OSCAMobilityUI.framework */; };
+		118D6A812B6D385D00E87E87 /* OSCAMobilityUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A522B6D385A00E87E87 /* OSCAMobilityUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A822B6D385D00E87E87 /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A532B6D385A00E87E87 /* OSCANetworkService.framework */; };
+		118D6A832B6D385D00E87E87 /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A532B6D385A00E87E87 /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A842B6D385D00E87E87 /* OSCAPressReleases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A542B6D385A00E87E87 /* OSCAPressReleases.framework */; };
+		118D6A852B6D385D00E87E87 /* OSCAPressReleases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A542B6D385A00E87E87 /* OSCAPressReleases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A862B6D385D00E87E87 /* OSCAPressReleasesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A552B6D385A00E87E87 /* OSCAPressReleasesUI.framework */; };
+		118D6A872B6D385D00E87E87 /* OSCAPressReleasesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A552B6D385A00E87E87 /* OSCAPressReleasesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A882B6D385D00E87E87 /* OSCAPublicTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A562B6D385A00E87E87 /* OSCAPublicTransport.framework */; };
+		118D6A892B6D385D00E87E87 /* OSCAPublicTransport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A562B6D385A00E87E87 /* OSCAPublicTransport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A8A2B6D385E00E87E87 /* OSCAPublicTransportUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A572B6D385A00E87E87 /* OSCAPublicTransportUI.framework */; };
+		118D6A8B2B6D385E00E87E87 /* OSCAPublicTransportUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A572B6D385A00E87E87 /* OSCAPublicTransportUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A8C2B6D385E00E87E87 /* OSCASafariView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A582B6D385A00E87E87 /* OSCASafariView.framework */; };
+		118D6A8D2B6D385E00E87E87 /* OSCASafariView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A582B6D385A00E87E87 /* OSCASafariView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A902B6D385E00E87E87 /* OSCAWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5A2B6D385A00E87E87 /* OSCAWaste.framework */; };
+		118D6A912B6D385E00E87E87 /* OSCAWaste.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5A2B6D385A00E87E87 /* OSCAWaste.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A922B6D385F00E87E87 /* OSCAWasteUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5B2B6D385A00E87E87 /* OSCAWasteUI.framework */; };
+		118D6A932B6D385F00E87E87 /* OSCAWasteUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5B2B6D385A00E87E87 /* OSCAWasteUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A942B6D385F00E87E87 /* OSCAWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5C2B6D385A00E87E87 /* OSCAWeather.framework */; };
+		118D6A952B6D385F00E87E87 /* OSCAWeather.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5C2B6D385A00E87E87 /* OSCAWeather.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A962B6D385F00E87E87 /* OSCAWeatherUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5D2B6D385A00E87E87 /* OSCAWeatherUI.framework */; };
+		118D6A972B6D385F00E87E87 /* OSCAWeatherUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118D6A5D2B6D385A00E87E87 /* OSCAWeatherUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		118D6A992B6D395700E87E87 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 118D6A982B6D395700E87E87 /* DeviceKit */; };
+		118D6A9B2B6D395700E87E87 /* SwiftSpinner in Frameworks */ = {isa = PBXBuildFile; productRef = 118D6A9A2B6D395700E87E87 /* SwiftSpinner */; };
+		118D6A9D2B6D395700E87E87 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 118D6A9C2B6D395700E87E87 /* SkyFloatingLabelTextField */; };
+		118D6A9F2B6D395700E87E87 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 118D6A9E2B6D395700E87E87 /* SwiftSoup */; };
+		118D6AA12B6D395700E87E87 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 118D6AA02B6D395700E87E87 /* SwiftDate */; };
+		118DC3552860D3D200365384 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118DC3522860D3D200365384 /* Localizable.strings */; };
+		119FD5162B320F6A00FA373A /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		119FD5172B320F6A00FA373A /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		119FD5182B320F6B00FA373A /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		119FD5192B320F6B00FA373A /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		119FD51A2B320F7100FA373A /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		119FD51B2B320F7100FA373A /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		119FD51C2B320F7200FA373A /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */; };
+		119FD51D2B320F7200FA373A /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */; };
+		11BC235928D05EBB0045716F /* AppDelegate+Deeplinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BC235828D05EBB0045716F /* AppDelegate+Deeplinking.swift */; };
+		11BDD45328BD32AF004B4223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDD45228BD32AF004B4223 /* Assets.xcassets */; };
+		11D191ED2907DD87008D360B /* AppDelegate+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D191EC2907DD87008D360B /* AppDelegate+Push.swift */; };
+		11D191F52907E189008D360B /* AppDelegate+StateRestauration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D191F42907E189008D360B /* AppDelegate+StateRestauration.swift */; };
+		11D5C38628BD099300695D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C38428BD099200695D95 /* AppDelegate.swift */; };
+		11E11322284767D400D9248C /* Solingen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11E11320284767D400D9248C /* Solingen.xcdatamodeld */; };
+		11E11332284767D500D9248C /* SolingenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E11331284767D500D9248C /* SolingenTests.swift */; };
+		11E1133C284767D500D9248C /* SolingenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1133B284767D500D9248C /* SolingenUITests.swift */; };
+		11E1133E284767D500D9248C /* SolingenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1133D284767D500D9248C /* SolingenUITestsLaunchTests.swift */; };
+		11ED438E2B3334F700876DC8 /* OSCASolingen in Frameworks */ = {isa = PBXBuildFile; productRef = 11ED438D2B3334F700876DC8 /* OSCASolingen */; };
+		11ED438F2B33368600876DC8 /* DeeplinkingTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4028B2B31E3F3001D2746 /* DeeplinkingTestSuite.swift */; };
+		11ED43902B33368D00876DC8 /* PressReleasesDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4028D2B31E3F3001D2746 /* PressReleasesDeeplinkingTests.swift */; };
+		11ED43912B33369300876DC8 /* SolingenDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11536FB02B3211630041985E /* SolingenDeeplinkingTests.swift */; };
+		11ED43922B33369B00876DC8 /* ContactDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED43862B332C9D00876DC8 /* ContactDeeplinkingTests.swift */; };
+		11ED43932B3336A000876DC8 /* CoworkingDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED43882B332DCF00876DC8 /* CoworkingDeeplinkingTests.swift */; };
+		11ED43942B3336A800876DC8 /* CultureDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED438A2B332E7900876DC8 /* CultureDeeplinkingTests.swift */; };
+		11ED439C2B3338F600876DC8 /* OSCASolingen in Frameworks */ = {isa = PBXBuildFile; productRef = 11ED439B2B3338F600876DC8 /* OSCASolingen */; };
+		11ED439E2B3339EC00876DC8 /* DefectDeeplinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED439D2B3339EC00876DC8 /* DefectDeeplinkingTests.swift */; };
+		11F637D02B321DCB00AC48B3 /* OSCASolingen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F637CF2B321DCB00AC48B3 /* OSCASolingen.framework */; };
+		11F637D12B321DCB00AC48B3 /* OSCASolingen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11F637CF2B321DCB00AC48B3 /* OSCASolingen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7AFDF2A2937615A001656D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AFDF292937615A001656D3 /* Assets.xcassets */; };
+		F7AFDF2F2937627A001656D3 /* AppDelegate+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFDF2E29376279001656D3 /* AppDelegate+ErrorHandling.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1109D165292D3AD700CB244C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E1130C284767D400D9248C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1109D14B292D3AD500CB244C;
+			remoteInfo = SolingenApp;
+		};
+		1109D16F292D3AD700CB244C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E1130C284767D400D9248C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1109D14B292D3AD500CB244C;
+			remoteInfo = SolingenApp;
+		};
+		11E1132E284767D500D9248C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E1130C284767D400D9248C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E11313284767D400D9248C;
+			remoteInfo = Solingen;
+		};
+		11E11338284767D500D9248C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E1130C284767D400D9248C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E11313284767D400D9248C;
+			remoteInfo = Solingen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11106B5728BCDC06006AE7F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BB09F9292E461A00E1E52C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E81B8328EF66CF00A8E261 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7979AE229DB1E0400F93A6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				118D6A692B6D385A00E87E87 /* OSCACulture.framework in Embed Frameworks */,
+				118D6A7B2B6D385C00E87E87 /* OSCAMap.framework in Embed Frameworks */,
+				118D6A912B6D385E00E87E87 /* OSCAWaste.framework in Embed Frameworks */,
+				118D6A6F2B6D385B00E87E87 /* OSCADefectUI.framework in Embed Frameworks */,
+				118D6A6D2B6D385B00E87E87 /* OSCADefect.framework in Embed Frameworks */,
+				118D6A872B6D385D00E87E87 /* OSCAPressReleasesUI.framework in Embed Frameworks */,
+				118D6A752B6D385C00E87E87 /* OSCAEventsUI.framework in Embed Frameworks */,
+				118D6A832B6D385D00E87E87 /* OSCANetworkService.framework in Embed Frameworks */,
+				118D6A852B6D385D00E87E87 /* OSCAPressReleases.framework in Embed Frameworks */,
+				118D6A652B6D385A00E87E87 /* OSCACoworking.framework in Embed Frameworks */,
+				118D6A7D2B6D385C00E87E87 /* OSCAMapUI.framework in Embed Frameworks */,
+				118D6A7F2B6D385C00E87E87 /* OSCAMobility.framework in Embed Frameworks */,
+				118D6A8D2B6D385E00E87E87 /* OSCASafariView.framework in Embed Frameworks */,
+				118D6A712B6D385B00E87E87 /* OSCAEssentials.framework in Embed Frameworks */,
+				118D6A972B6D385F00E87E87 /* OSCAWeatherUI.framework in Embed Frameworks */,
+				118D6A952B6D385F00E87E87 /* OSCAWeather.framework in Embed Frameworks */,
+				11F637D12B321DCB00AC48B3 /* OSCASolingen.framework in Embed Frameworks */,
+				118D6A792B6D385C00E87E87 /* OSCAJobsUI.framework in Embed Frameworks */,
+				118D6A812B6D385D00E87E87 /* OSCAMobilityUI.framework in Embed Frameworks */,
+				118D6A892B6D385D00E87E87 /* OSCAPublicTransport.framework in Embed Frameworks */,
+				118D6A6B2B6D385B00E87E87 /* OSCACultureUI.framework in Embed Frameworks */,
+				118D6A732B6D385B00E87E87 /* OSCAEvents.framework in Embed Frameworks */,
+				118D6A612B6D385A00E87E87 /* OSCAContact.framework in Embed Frameworks */,
+				118D6A8B2B6D385E00E87E87 /* OSCAPublicTransportUI.framework in Embed Frameworks */,
+				118D6A672B6D385A00E87E87 /* OSCACoworkingUI.framework in Embed Frameworks */,
+				118D6A932B6D385F00E87E87 /* OSCAWasteUI.framework in Embed Frameworks */,
+				118D6A772B6D385C00E87E87 /* OSCAJobs.framework in Embed Frameworks */,
+				118D6A632B6D385A00E87E87 /* OSCAContactUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1109D14C292D3AD500CB244C /* SolingenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolingenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1109D158292D3AD500CB244C /* SolingenApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SolingenApp.xcdatamodel; sourceTree = "<group>"; };
+		1109D164292D3AD700CB244C /* SolingenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolingenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1109D168292D3AD700CB244C /* SolingenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenAppTests.swift; sourceTree = "<group>"; };
+		1109D16E292D3AD700CB244C /* SolingenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolingenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1109D172292D3AD700CB244C /* SolingenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenAppUITests.swift; sourceTree = "<group>"; };
+		1109D174292D3AD700CB244C /* SolingenAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1109D185292D3CBB00CB244C /* AppDelegate+Deeplinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Deeplinking.swift"; sourceTree = "<group>"; };
+		1109D186292D3CBB00CB244C /* Notification+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
+		1109D18B292D3CD700CB244C /* AppDelegate+Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Push.swift"; sourceTree = "<group>"; };
+		1109D18C292D3CD700CB244C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1109D18D292D3CD700CB244C /* AppDelegate+StateRestauration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+StateRestauration.swift"; sourceTree = "<group>"; };
+		1109D19C292D450D00CB244C /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		1109D19D292D450D00CB244C /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		111D5F4528FD99AD00333596 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11241C1828FFE269009B8C31 /* AppDelegate+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ErrorHandling.swift"; sourceTree = "<group>"; };
+		114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+		114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		11536FB02B3211630041985E /* SolingenDeeplinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenDeeplinkingTests.swift; sourceTree = "<group>"; };
+		1173D22D287D8FB10059778C /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
+		118D6A412B6D385A00E87E87 /* OSCAAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A422B6D385A00E87E87 /* OSCAContact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAContact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A432B6D385A00E87E87 /* OSCAContactUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAContactUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A442B6D385A00E87E87 /* OSCACoworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACoworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A452B6D385A00E87E87 /* OSCACoworkingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACoworkingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A462B6D385A00E87E87 /* OSCACulture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACulture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A472B6D385A00E87E87 /* OSCACultureUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACultureUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A482B6D385A00E87E87 /* OSCADefect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCADefect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A492B6D385A00E87E87 /* OSCADefectUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCADefectUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4A2B6D385A00E87E87 /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4B2B6D385A00E87E87 /* OSCAEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4C2B6D385A00E87E87 /* OSCAEventsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEventsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4D2B6D385A00E87E87 /* OSCAJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4E2B6D385A00E87E87 /* OSCAJobsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAJobsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A4F2B6D385A00E87E87 /* OSCAMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A502B6D385A00E87E87 /* OSCAMapUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAMapUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A512B6D385A00E87E87 /* OSCAMobility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAMobility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A522B6D385A00E87E87 /* OSCAMobilityUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAMobilityUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A532B6D385A00E87E87 /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A542B6D385A00E87E87 /* OSCAPressReleases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAPressReleases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A552B6D385A00E87E87 /* OSCAPressReleasesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAPressReleasesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A562B6D385A00E87E87 /* OSCAPublicTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAPublicTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A572B6D385A00E87E87 /* OSCAPublicTransportUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAPublicTransportUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A582B6D385A00E87E87 /* OSCASafariView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCASafariView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A592B6D385A00E87E87 /* OSCATemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A5A2B6D385A00E87E87 /* OSCAWaste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAWaste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A5B2B6D385A00E87E87 /* OSCAWasteUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAWasteUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A5C2B6D385A00E87E87 /* OSCAWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118D6A5D2B6D385A00E87E87 /* OSCAWeatherUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAWeatherUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118DC3542860D3D200365384 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		118DC3562860D6D600365384 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11A20FFF2864E5A200BE2A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11A210002864E5AE00BE2A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11BB09F2292E209400E1E52C /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11BB09F3292E209400E1E52C /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		11BB09FA292E577100E1E52C /* SolingenApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SolingenApp.entitlements; sourceTree = "<group>"; };
+		11BC235828D05EBB0045716F /* AppDelegate+Deeplinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Deeplinking.swift"; sourceTree = "<group>"; };
+		11BDD45228BD32AF004B4223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D191EC2907DD87008D360B /* AppDelegate+Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Push.swift"; sourceTree = "<group>"; };
+		11D191F42907E189008D360B /* AppDelegate+StateRestauration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+StateRestauration.swift"; sourceTree = "<group>"; };
+		11D4028B2B31E3F3001D2746 /* DeeplinkingTestSuite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkingTestSuite.swift; sourceTree = "<group>"; };
+		11D4028D2B31E3F3001D2746 /* PressReleasesDeeplinkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressReleasesDeeplinkingTests.swift; sourceTree = "<group>"; };
+		11D5C38428BD099200695D95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11E11314284767D400D9248C /* Solingen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solingen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E11321284767D400D9248C /* Solingen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solingen.xcdatamodel; sourceTree = "<group>"; };
+		11E11328284767D500D9248C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E1132D284767D500D9248C /* SolingenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolingenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E11331284767D500D9248C /* SolingenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenTests.swift; sourceTree = "<group>"; };
+		11E11337284767D500D9248C /* SolingenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolingenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E1133B284767D500D9248C /* SolingenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenUITests.swift; sourceTree = "<group>"; };
+		11E1133D284767D500D9248C /* SolingenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolingenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11E1135228476B4E00D9248C /* Solingen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Solingen.entitlements; sourceTree = "<group>"; };
+		11ED43862B332C9D00876DC8 /* ContactDeeplinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDeeplinkingTests.swift; sourceTree = "<group>"; };
+		11ED43882B332DCF00876DC8 /* CoworkingDeeplinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoworkingDeeplinkingTests.swift; sourceTree = "<group>"; };
+		11ED438A2B332E7900876DC8 /* CultureDeeplinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDeeplinkingTests.swift; sourceTree = "<group>"; };
+		11ED439D2B3339EC00876DC8 /* DefectDeeplinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectDeeplinkingTests.swift; sourceTree = "<group>"; };
+		11F637CF2B321DCB00AC48B3 /* OSCASolingen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCASolingen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FF2F64285A16310037FFB3 /* SolingenTestCasePreBuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = SolingenTestCasePreBuild.sh; path = scripts/SolingenTestCasePreBuild.sh; sourceTree = "<group>"; };
+		A17303512BDA56B3004A88C4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F7AFDF292937615A001656D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Solingen/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		F7AFDF2E29376279001656D3 /* AppDelegate+ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ErrorHandling.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1109D149292D3AD500CB244C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118D6A682B6D385A00E87E87 /* OSCACulture.framework in Frameworks */,
+				118D6A7A2B6D385C00E87E87 /* OSCAMap.framework in Frameworks */,
+				118D6A902B6D385E00E87E87 /* OSCAWaste.framework in Frameworks */,
+				118D6A6E2B6D385B00E87E87 /* OSCADefectUI.framework in Frameworks */,
+				118D6A6C2B6D385B00E87E87 /* OSCADefect.framework in Frameworks */,
+				118D6A862B6D385D00E87E87 /* OSCAPressReleasesUI.framework in Frameworks */,
+				118D6A742B6D385B00E87E87 /* OSCAEventsUI.framework in Frameworks */,
+				118D6A822B6D385D00E87E87 /* OSCANetworkService.framework in Frameworks */,
+				118D6A842B6D385D00E87E87 /* OSCAPressReleases.framework in Frameworks */,
+				118D6A642B6D385A00E87E87 /* OSCACoworking.framework in Frameworks */,
+				118D6A7C2B6D385C00E87E87 /* OSCAMapUI.framework in Frameworks */,
+				118D6A7E2B6D385C00E87E87 /* OSCAMobility.framework in Frameworks */,
+				118D6A8C2B6D385E00E87E87 /* OSCASafariView.framework in Frameworks */,
+				118D6A9D2B6D395700E87E87 /* SkyFloatingLabelTextField in Frameworks */,
+				118D6A702B6D385B00E87E87 /* OSCAEssentials.framework in Frameworks */,
+				118D6A962B6D385F00E87E87 /* OSCAWeatherUI.framework in Frameworks */,
+				118D6A942B6D385F00E87E87 /* OSCAWeather.framework in Frameworks */,
+				11F637D02B321DCB00AC48B3 /* OSCASolingen.framework in Frameworks */,
+				118D6A782B6D385C00E87E87 /* OSCAJobsUI.framework in Frameworks */,
+				118D6A802B6D385D00E87E87 /* OSCAMobilityUI.framework in Frameworks */,
+				118D6A882B6D385D00E87E87 /* OSCAPublicTransport.framework in Frameworks */,
+				118D6A6A2B6D385B00E87E87 /* OSCACultureUI.framework in Frameworks */,
+				118D6A722B6D385B00E87E87 /* OSCAEvents.framework in Frameworks */,
+				118D6A992B6D395700E87E87 /* DeviceKit in Frameworks */,
+				118D6A9F2B6D395700E87E87 /* SwiftSoup in Frameworks */,
+				118D6A9B2B6D395700E87E87 /* SwiftSpinner in Frameworks */,
+				118D6A602B6D385A00E87E87 /* OSCAContact.framework in Frameworks */,
+				118D6A8A2B6D385E00E87E87 /* OSCAPublicTransportUI.framework in Frameworks */,
+				118D6A662B6D385A00E87E87 /* OSCACoworkingUI.framework in Frameworks */,
+				118D6A922B6D385F00E87E87 /* OSCAWasteUI.framework in Frameworks */,
+				118D6AA12B6D395700E87E87 /* SwiftDate in Frameworks */,
+				118D6A762B6D385C00E87E87 /* OSCAJobs.framework in Frameworks */,
+				118D6A622B6D385A00E87E87 /* OSCAContactUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D161292D3AD700CB244C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D16B292D3AD700CB244C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11311284767D400D9248C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED438E2B3334F700876DC8 /* OSCASolingen in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E1132A284767D500D9248C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11334284767D500D9248C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED439C2B3338F600876DC8 /* OSCASolingen in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1106A77B2847C2130085885A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118D6A412B6D385A00E87E87 /* OSCAAnalytics.framework */,
+				118D6A422B6D385A00E87E87 /* OSCAContact.framework */,
+				118D6A432B6D385A00E87E87 /* OSCAContactUI.framework */,
+				118D6A442B6D385A00E87E87 /* OSCACoworking.framework */,
+				118D6A452B6D385A00E87E87 /* OSCACoworkingUI.framework */,
+				118D6A462B6D385A00E87E87 /* OSCACulture.framework */,
+				118D6A472B6D385A00E87E87 /* OSCACultureUI.framework */,
+				118D6A482B6D385A00E87E87 /* OSCADefect.framework */,
+				118D6A492B6D385A00E87E87 /* OSCADefectUI.framework */,
+				118D6A4A2B6D385A00E87E87 /* OSCAEssentials.framework */,
+				118D6A4B2B6D385A00E87E87 /* OSCAEvents.framework */,
+				118D6A4C2B6D385A00E87E87 /* OSCAEventsUI.framework */,
+				118D6A4D2B6D385A00E87E87 /* OSCAJobs.framework */,
+				118D6A4E2B6D385A00E87E87 /* OSCAJobsUI.framework */,
+				118D6A4F2B6D385A00E87E87 /* OSCAMap.framework */,
+				118D6A502B6D385A00E87E87 /* OSCAMapUI.framework */,
+				118D6A512B6D385A00E87E87 /* OSCAMobility.framework */,
+				118D6A522B6D385A00E87E87 /* OSCAMobilityUI.framework */,
+				118D6A532B6D385A00E87E87 /* OSCANetworkService.framework */,
+				118D6A542B6D385A00E87E87 /* OSCAPressReleases.framework */,
+				118D6A552B6D385A00E87E87 /* OSCAPressReleasesUI.framework */,
+				118D6A562B6D385A00E87E87 /* OSCAPublicTransport.framework */,
+				118D6A572B6D385A00E87E87 /* OSCAPublicTransportUI.framework */,
+				118D6A582B6D385A00E87E87 /* OSCASafariView.framework */,
+				118D6A592B6D385A00E87E87 /* OSCATemplate.framework */,
+				118D6A5A2B6D385A00E87E87 /* OSCAWaste.framework */,
+				118D6A5B2B6D385A00E87E87 /* OSCAWasteUI.framework */,
+				118D6A5C2B6D385A00E87E87 /* OSCAWeather.framework */,
+				118D6A5D2B6D385A00E87E87 /* OSCAWeatherUI.framework */,
+				11F637CF2B321DCB00AC48B3 /* OSCASolingen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1109D14D292D3AD500CB244C /* SolingenApp */ = {
+			isa = PBXGroup;
+			children = (
+				11BB09FA292E577100E1E52C /* SolingenApp.entitlements */,
+				F7AFDF2D29376279001656D3 /* Error */,
+				1109D184292D3CBB00CB244C /* Deeplink */,
+				1109D189292D3CD700CB244C /* Application */,
+				1109D191292D3CFD00CB244C /* Presentation */,
+				1109D19A292D3E1A00CB244C /* Resources */,
+				1109D1A0292D451800CB244C /* SupportingFiles */,
+			);
+			path = SolingenApp;
+			sourceTree = "<group>";
+		};
+		1109D167292D3AD700CB244C /* SolingenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1109D168292D3AD700CB244C /* SolingenAppTests.swift */,
+			);
+			path = SolingenAppTests;
+			sourceTree = "<group>";
+		};
+		1109D171292D3AD700CB244C /* SolingenAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1109D172292D3AD700CB244C /* SolingenAppUITests.swift */,
+				1109D174292D3AD700CB244C /* SolingenAppUITestsLaunchTests.swift */,
+			);
+			path = SolingenAppUITests;
+			sourceTree = "<group>";
+		};
+		1109D184292D3CBB00CB244C /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1109D185292D3CBB00CB244C /* AppDelegate+Deeplinking.swift */,
+				1109D186292D3CBB00CB244C /* Notification+Name.swift */,
+			);
+			name = Deeplink;
+			path = Solingen/Deeplink;
+			sourceTree = SOURCE_ROOT;
+		};
+		1109D189292D3CD700CB244C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1109D18A292D3CD700CB244C /* AppDelegate */,
+			);
+			name = Application;
+			path = Solingen/Application;
+			sourceTree = SOURCE_ROOT;
+		};
+		1109D18A292D3CD700CB244C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1109D18B292D3CD700CB244C /* AppDelegate+Push.swift */,
+				1109D18C292D3CD700CB244C /* AppDelegate.swift */,
+				1109D18D292D3CD700CB244C /* AppDelegate+StateRestauration.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1109D191292D3CFD00CB244C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1109D192292D3CFD00CB244C /* LaunchScreenScene */,
+			);
+			name = Presentation;
+			path = Solingen/Presentation;
+			sourceTree = SOURCE_ROOT;
+		};
+		1109D192292D3CFD00CB244C /* LaunchScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				1109D193292D3CFD00CB244C /* View */,
+			);
+			path = LaunchScreenScene;
+			sourceTree = "<group>";
+		};
+		1109D193292D3CFD00CB244C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1109D19A292D3E1A00CB244C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7AFDF292937615A001656D3 /* Assets.xcassets */,
+				1109D157292D3AD500CB244C /* SolingenApp.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1109D1A0292D451800CB244C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11BB09F3292E209400E1E52C /* Development.xcconfig */,
+				11BB09F2292E209400E1E52C /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11241C1728FFE253009B8C31 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				11241C1828FFE269009B8C31 /* AppDelegate+ErrorHandling.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		11285BBF28D0CE500098BBF5 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1173D212287D8E280059778C /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1173D22D287D8FB10059778C /* Notification+Name.swift */,
+				11BC235828D05EBB0045716F /* AppDelegate+Deeplinking.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		11755A9728C74D8200B048F3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11755A9828C74D8200B048F3 /* LaunchScreenScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		11755A9828C74D8200B048F3 /* LaunchScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				11755A9928C74D8200B048F3 /* View */,
+			);
+			path = LaunchScreenScene;
+			sourceTree = "<group>";
+		};
+		11755A9928C74D8200B048F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				111D5F4528FD99AD00333596 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		118119EC285A0DD100253965 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				11FF2F64285A16310037FFB3 /* SolingenTestCasePreBuild.sh */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		11D191F62907E19C008D360B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				11D5C38428BD099200695D95 /* AppDelegate.swift */,
+				11D191EC2907DD87008D360B /* AppDelegate+Push.swift */,
+				11D191F42907E189008D360B /* AppDelegate+StateRestauration.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11D4028A2B31E3F3001D2746 /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				11D4028B2B31E3F3001D2746 /* DeeplinkingTestSuite.swift */,
+				11D4028D2B31E3F3001D2746 /* PressReleasesDeeplinkingTests.swift */,
+				11536FB02B3211630041985E /* SolingenDeeplinkingTests.swift */,
+				11ED43862B332C9D00876DC8 /* ContactDeeplinkingTests.swift */,
+				11ED43882B332DCF00876DC8 /* CoworkingDeeplinkingTests.swift */,
+				11ED438A2B332E7900876DC8 /* CultureDeeplinkingTests.swift */,
+				11ED439D2B3339EC00876DC8 /* DefectDeeplinkingTests.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		11D5C38228BD095700695D95 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11D191F62907E19C008D360B /* AppDelegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11E1130B284767D400D9248C = {
+			isa = PBXGroup;
+			children = (
+				A17303512BDA56B3004A88C4 /* PrivacyInfo.xcprivacy */,
+				11285BBF28D0CE500098BBF5 /* Packages */,
+				118119EC285A0DD100253965 /* scripts */,
+				11E11316284767D400D9248C /* Solingen */,
+				11E11330284767D500D9248C /* SolingenTests */,
+				11E1133A284767D500D9248C /* SolingenUITests */,
+				1109D14D292D3AD500CB244C /* SolingenApp */,
+				1109D167292D3AD700CB244C /* SolingenAppTests */,
+				1109D171292D3AD700CB244C /* SolingenAppUITests */,
+				11E11315284767D400D9248C /* Products */,
+				1106A77B2847C2130085885A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11E11315284767D400D9248C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11E11314284767D400D9248C /* Solingen.app */,
+				11E1132D284767D500D9248C /* SolingenTests.xctest */,
+				11E11337284767D500D9248C /* SolingenUITests.xctest */,
+				1109D14C292D3AD500CB244C /* SolingenApp.app */,
+				1109D164292D3AD700CB244C /* SolingenAppTests.xctest */,
+				1109D16E292D3AD700CB244C /* SolingenAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11E11316284767D400D9248C /* Solingen */ = {
+			isa = PBXGroup;
+			children = (
+				11241C1728FFE253009B8C31 /* Error */,
+				1173D212287D8E280059778C /* Deeplink */,
+				11D5C38228BD095700695D95 /* Application */,
+				11755A9728C74D8200B048F3 /* Presentation */,
+				11E1134F2847683900D9248C /* Resources */,
+				11E113502847684600D9248C /* SupportingFiles */,
+				11E11328284767D500D9248C /* Info.plist */,
+			);
+			path = Solingen;
+			sourceTree = "<group>";
+		};
+		11E11330284767D500D9248C /* SolingenTests */ = {
+			isa = PBXGroup;
+			children = (
+				11A20FFF2864E5A200BE2A6E /* Info.plist */,
+				11E11331284767D500D9248C /* SolingenTests.swift */,
+			);
+			path = SolingenTests;
+			sourceTree = "<group>";
+		};
+		11E1133A284767D500D9248C /* SolingenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11D4028A2B31E3F3001D2746 /* Deeplink */,
+				11A210002864E5AE00BE2A6E /* Info.plist */,
+				11E1133B284767D500D9248C /* SolingenUITests.swift */,
+				11E1133D284767D500D9248C /* SolingenUITestsLaunchTests.swift */,
+			);
+			path = SolingenUITests;
+			sourceTree = "<group>";
+		};
+		11E1134F2847683900D9248C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11BDD45228BD32AF004B4223 /* Assets.xcassets */,
+				118DC3522860D3D200365384 /* Localizable.strings */,
+				11E11320284767D400D9248C /* Solingen.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11E113502847684600D9248C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				114DAE3E2B1E04EE00F3AE01 /* API_Develop.plist */,
+				114DAE3F2B1E04EE00F3AE01 /* API_Release.plist */,
+				1109D19C292D450D00CB244C /* Development.xcconfig */,
+				1109D19D292D450D00CB244C /* Production.xcconfig */,
+				11E1135228476B4E00D9248C /* Solingen.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F7AFDF2D29376279001656D3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F7AFDF2E29376279001656D3 /* AppDelegate+ErrorHandling.swift */,
+			);
+			name = Error;
+			path = Solingen/Error;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1109D14B292D3AD500CB244C /* SolingenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1109D17C292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenApp" */;
+			buildPhases = (
+				1109D148292D3AD500CB244C /* Sources */,
+				1109D149292D3AD500CB244C /* Frameworks */,
+				1109D14A292D3AD500CB244C /* Resources */,
+				11BB09F9292E461A00E1E52C /* Embed Foundation Extensions */,
+				F7979AE229DB1E0400F93A6D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolingenApp;
+			packageProductDependencies = (
+				118D6A982B6D395700E87E87 /* DeviceKit */,
+				118D6A9A2B6D395700E87E87 /* SwiftSpinner */,
+				118D6A9C2B6D395700E87E87 /* SkyFloatingLabelTextField */,
+				118D6A9E2B6D395700E87E87 /* SwiftSoup */,
+				118D6AA02B6D395700E87E87 /* SwiftDate */,
+			);
+			productName = SolingenApp;
+			productReference = 1109D14C292D3AD500CB244C /* SolingenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1109D163292D3AD700CB244C /* SolingenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1109D17D292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenAppTests" */;
+			buildPhases = (
+				1109D160292D3AD700CB244C /* Sources */,
+				1109D161292D3AD700CB244C /* Frameworks */,
+				1109D162292D3AD700CB244C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1109D166292D3AD700CB244C /* PBXTargetDependency */,
+			);
+			name = SolingenAppTests;
+			productName = SolingenAppTests;
+			productReference = 1109D164292D3AD700CB244C /* SolingenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1109D16D292D3AD700CB244C /* SolingenAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1109D17E292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenAppUITests" */;
+			buildPhases = (
+				1109D16A292D3AD700CB244C /* Sources */,
+				1109D16B292D3AD700CB244C /* Frameworks */,
+				1109D16C292D3AD700CB244C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1109D170292D3AD700CB244C /* PBXTargetDependency */,
+			);
+			name = SolingenAppUITests;
+			productName = SolingenAppUITests;
+			productReference = 1109D16E292D3AD700CB244C /* SolingenAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		11E11313284767D400D9248C /* Solingen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E11341284767D500D9248C /* Build configuration list for PBXNativeTarget "Solingen" */;
+			buildPhases = (
+				11E11310284767D400D9248C /* Sources */,
+				11E11311284767D400D9248C /* Frameworks */,
+				11E11312284767D400D9248C /* Resources */,
+				27E81B8328EF66CF00A8E261 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Solingen;
+			packageProductDependencies = (
+				11ED438D2B3334F700876DC8 /* OSCASolingen */,
+			);
+			productName = Solingen;
+			productReference = 11E11314284767D400D9248C /* Solingen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11E1132C284767D500D9248C /* SolingenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E11344284767D500D9248C /* Build configuration list for PBXNativeTarget "SolingenTests" */;
+			buildPhases = (
+				11E11329284767D500D9248C /* Sources */,
+				11E1132A284767D500D9248C /* Frameworks */,
+				11E1132B284767D500D9248C /* Resources */,
+				11106B5728BCDC06006AE7F8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E1132F284767D500D9248C /* PBXTargetDependency */,
+			);
+			name = SolingenTests;
+			packageProductDependencies = (
+			);
+			productName = SolingenTests;
+			productReference = 11E1132D284767D500D9248C /* SolingenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11E11336284767D500D9248C /* SolingenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E11347284767D500D9248C /* Build configuration list for PBXNativeTarget "SolingenUITests" */;
+			buildPhases = (
+				11E11333284767D500D9248C /* Sources */,
+				11E11334284767D500D9248C /* Frameworks */,
+				11E11335284767D500D9248C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E11339284767D500D9248C /* PBXTargetDependency */,
+			);
+			name = SolingenUITests;
+			packageProductDependencies = (
+				11ED439B2B3338F600876DC8 /* OSCASolingen */,
+			);
+			productName = SolingenUITests;
+			productReference = 11E11337284767D500D9248C /* SolingenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11E1130C284767D400D9248C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1109D14B292D3AD500CB244C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					1109D163292D3AD700CB244C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1109D14B292D3AD500CB244C;
+					};
+					1109D16D292D3AD700CB244C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1109D14B292D3AD500CB244C;
+					};
+					11E11313284767D400D9248C = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					11E1132C284767D500D9248C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 11E11313284767D400D9248C;
+					};
+					11E11336284767D500D9248C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 11E11313284767D400D9248C;
+					};
+				};
+			};
+			buildConfigurationList = 11E1130F284767D400D9248C /* Build configuration list for PBXProject "Solingen" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				Base,
+			);
+			mainGroup = 11E1130B284767D400D9248C;
+			packageReferences = (
+				11D2FA602B32FEDE00FFEE76 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				11D2FA632B32FF0100FFEE76 /* XCRemoteSwiftPackageReference "SwiftSpinner" */,
+				11D2FA662B32FFDE00FFEE76 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+				11D2FA692B33001000FFEE76 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				11D2FA6C2B33006900FFEE76 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				11ED438C2B3334F700876DC8 /* XCLocalSwiftPackageReference ".." */,
+			);
+			productRefGroup = 11E11315284767D400D9248C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11E11313284767D400D9248C /* Solingen */,
+				11E1132C284767D500D9248C /* SolingenTests */,
+				11E11336284767D500D9248C /* SolingenUITests */,
+				1109D14B292D3AD500CB244C /* SolingenApp */,
+				1109D163292D3AD700CB244C /* SolingenAppTests */,
+				1109D16D292D3AD700CB244C /* SolingenAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1109D14A292D3AD500CB244C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114DAE432B1E04EE00F3AE01 /* API_Release.plist in Resources */,
+				118D6A3E2B6D31B900E87E87 /* LaunchScreen.storyboard in Resources */,
+				F7AFDF2A2937615A001656D3 /* Assets.xcassets in Resources */,
+				114DAE412B1E04EE00F3AE01 /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D162292D3AD700CB244C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119FD5162B320F6A00FA373A /* API_Release.plist in Resources */,
+				119FD5172B320F6A00FA373A /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D16C292D3AD700CB244C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119FD5182B320F6B00FA373A /* API_Release.plist in Resources */,
+				119FD5192B320F6B00FA373A /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11312284767D400D9248C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111D5F4728FD99AD00333596 /* LaunchScreen.storyboard in Resources */,
+				11BDD45328BD32AF004B4223 /* Assets.xcassets in Resources */,
+				118DC3552860D3D200365384 /* Localizable.strings in Resources */,
+				114DAE422B1E04EE00F3AE01 /* API_Release.plist in Resources */,
+				114DAE402B1E04EE00F3AE01 /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E1132B284767D500D9248C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119FD51A2B320F7100FA373A /* API_Release.plist in Resources */,
+				119FD51B2B320F7100FA373A /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11335284767D500D9248C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119FD51C2B320F7200FA373A /* API_Release.plist in Resources */,
+				119FD51D2B320F7200FA373A /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1109D148292D3AD500CB244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AFDF2F2937627A001656D3 /* AppDelegate+ErrorHandling.swift in Sources */,
+				1109D18E292D3CD800CB244C /* AppDelegate+Push.swift in Sources */,
+				1109D159292D3AD500CB244C /* SolingenApp.xcdatamodeld in Sources */,
+				1109D18F292D3CD800CB244C /* AppDelegate.swift in Sources */,
+				1109D190292D3CD800CB244C /* AppDelegate+StateRestauration.swift in Sources */,
+				1109D187292D3CBC00CB244C /* AppDelegate+Deeplinking.swift in Sources */,
+				1109D188292D3CBC00CB244C /* Notification+Name.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D160292D3AD700CB244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1109D169292D3AD700CB244C /* SolingenAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1109D16A292D3AD700CB244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1109D173292D3AD700CB244C /* SolingenAppUITests.swift in Sources */,
+				1109D175292D3AD700CB244C /* SolingenAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11310284767D400D9248C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D191ED2907DD87008D360B /* AppDelegate+Push.swift in Sources */,
+				11D5C38628BD099300695D95 /* AppDelegate.swift in Sources */,
+				1173D22E287D8FB10059778C /* Notification+Name.swift in Sources */,
+				11D191F52907E189008D360B /* AppDelegate+StateRestauration.swift in Sources */,
+				11BC235928D05EBB0045716F /* AppDelegate+Deeplinking.swift in Sources */,
+				11883D452B69260300F58582 /* AppDelegate+ErrorHandling.swift in Sources */,
+				11E11322284767D400D9248C /* Solingen.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11329284767D500D9248C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E11332284767D500D9248C /* SolingenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E11333284767D500D9248C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED43932B3336A000876DC8 /* CoworkingDeeplinkingTests.swift in Sources */,
+				11ED43942B3336A800876DC8 /* CultureDeeplinkingTests.swift in Sources */,
+				11ED43912B33369300876DC8 /* SolingenDeeplinkingTests.swift in Sources */,
+				11ED43902B33368D00876DC8 /* PressReleasesDeeplinkingTests.swift in Sources */,
+				11E1133E284767D500D9248C /* SolingenUITestsLaunchTests.swift in Sources */,
+				11ED439E2B3339EC00876DC8 /* DefectDeeplinkingTests.swift in Sources */,
+				11ED43922B33369B00876DC8 /* ContactDeeplinkingTests.swift in Sources */,
+				11E1133C284767D500D9248C /* SolingenUITests.swift in Sources */,
+				11ED438F2B33368600876DC8 /* DeeplinkingTestSuite.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1109D166292D3AD700CB244C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1109D14B292D3AD500CB244C /* SolingenApp */;
+			targetProxy = 1109D165292D3AD700CB244C /* PBXContainerItemProxy */;
+		};
+		1109D170292D3AD700CB244C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1109D14B292D3AD500CB244C /* SolingenApp */;
+			targetProxy = 1109D16F292D3AD700CB244C /* PBXContainerItemProxy */;
+		};
+		11E1132F284767D500D9248C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E11313284767D400D9248C /* Solingen */;
+			targetProxy = 11E1132E284767D500D9248C /* PBXContainerItemProxy */;
+		};
+		11E11339284767D500D9248C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E11313284767D400D9248C /* Solingen */;
+			targetProxy = 11E11338284767D500D9248C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118DC3522860D3D200365384 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118DC3542860D3D200365384 /* en */,
+				118DC3562860D6D600365384 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1109D176292D3AD700CB244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = SolingenApp/SolingenApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Die Solingen-App möchte auf Bluetooth zugreifen, damit sie dich auf standortbezogene Dienste hinweisen kann";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Die Solingen-App möchte auf deinen Kalender zugreifen, damit sie dir Erinnerungen für Veranstaltungen in den Kalender eintragen kann";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Die Solingen-App möchte auf deine Kamera zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Die Solingen-App möchte auf dein Mikrofon zugreifen, damit deine Videos einen Ton haben.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Die Solingen-App möchte auf deine Fotos zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1109D177292D3AD700CB244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = SolingenApp/SolingenApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Die Solingen-App möchte auf Bluetooth zugreifen, damit sie dich auf standortbezogene Dienste hinweisen kann";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Die Solingen-App möchte auf deinen Kalender zugreifen, damit sie dir Erinnerungen für Veranstaltungen in den Kalender eintragen kann";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Die Solingen-App möchte auf deine Kamera zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Die Solingen-App möchte auf dein Mikrofon zugreifen, damit deine Videos einen Ton haben.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Die Solingen-App möchte auf deine Fotos zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1109D178292D3AD700CB244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.SolingenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolingenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolingenApp";
+			};
+			name = Debug;
+		};
+		1109D179292D3AD700CB244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.SolingenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolingenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolingenApp";
+			};
+			name = Release;
+		};
+		1109D17A292D3AD700CB244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.SolingenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolingenApp;
+			};
+			name = Debug;
+		};
+		1109D17B292D3AD700CB244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.SolingenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolingenApp;
+			};
+			name = Release;
+		};
+		11E1133F284767D500D9248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11E11340284767D500D9248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11E11342284767D500D9248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Solingen/SupportingFiles/Solingen.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202503250;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Solingen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Die Solingen-App möchte auf Bluetooth zugreifen, damit sie dich auf standortbezogene Dienste hinweisen kann";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Die Solingen-App möchte auf deinen Kalender zugreifen, damit sie dir Erinnerungen für Veranstaltungen in den Kalender eintragen kann";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Die Solingen-App möchte auf deine Kamera zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Die Solingen-App möchte auf dein Mikrofon zugreifen, damit deine Videos einen Ton haben.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Die Solingen-App möchte auf deine Fotos zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.8.8;
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11E11343284767D500D9248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Solingen/SupportingFiles/Solingen.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202503250;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Solingen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Solingen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Die Solingen-App möchte auf Bluetooth zugreifen, damit sie dich auf standortbezogene Dienste hinweisen kann";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Die Solingen-App möchte auf deinen Kalender zugreifen, damit sie dir Erinnerungen für Veranstaltungen in den Kalender eintragen kann";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Die Solingen-App möchte auf deine Kamera zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Die Solingen-App möchte auf deinen Standort zugreifen, damit sie dir relevante Informationen zu deiner Umgebung anzeigen kann.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Die Solingen-App möchte auf dein Mikrofon zugreifen, damit deine Videos einen Ton haben.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Die Solingen-App möchte auf deine Fotos zugreifen, damit du uns beispielsweise Bilder von Mängeln oder interessanten Orten in Solingen schicken kannst.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.8.8;
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11E11345284767D500D9248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolingenTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 3.0.14;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app.SolingenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solingen.app/Solingen";
+			};
+			name = Debug;
+		};
+		11E11346284767D500D9248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolingenTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 3.0.14;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app.SolingenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solingen.app/Solingen";
+			};
+			name = Release;
+		};
+		11E11348284767D500D9248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19C292D450D00CB244C /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolingenUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 3.0.14;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app.SolingenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Solingen;
+			};
+			name = Debug;
+		};
+		11E11349284767D500D9248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1109D19D292D450D00CB244C /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240508.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolingenUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 3.0.14;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.solingen.app.SolingenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Solingen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1109D17C292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1109D176292D3AD700CB244C /* Debug */,
+				1109D177292D3AD700CB244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1109D17D292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1109D178292D3AD700CB244C /* Debug */,
+				1109D179292D3AD700CB244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1109D17E292D3AD700CB244C /* Build configuration list for PBXNativeTarget "SolingenAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1109D17A292D3AD700CB244C /* Debug */,
+				1109D17B292D3AD700CB244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E1130F284767D400D9248C /* Build configuration list for PBXProject "Solingen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E1133F284767D500D9248C /* Debug */,
+				11E11340284767D500D9248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E11341284767D500D9248C /* Build configuration list for PBXNativeTarget "Solingen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E11342284767D500D9248C /* Debug */,
+				11E11343284767D500D9248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E11344284767D500D9248C /* Build configuration list for PBXNativeTarget "SolingenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E11345284767D500D9248C /* Debug */,
+				11E11346284767D500D9248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E11347284767D500D9248C /* Build configuration list for PBXNativeTarget "SolingenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E11348284767D500D9248C /* Debug */,
+				11E11349284767D500D9248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		11ED438C2B3334F700876DC8 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11D2FA602B32FEDE00FFEE76 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		11D2FA632B32FF0100FFEE76 /* XCRemoteSwiftPackageReference "SwiftSpinner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icanzilb/SwiftSpinner";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		11D2FA662B32FFDE00FFEE76 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.8.0;
+			};
+		};
+		11D2FA692B33001000FFEE76 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.4.3;
+			};
+		};
+		11D2FA6C2B33006900FFEE76 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		118D6A982B6D395700E87E87 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D2FA602B32FEDE00FFEE76 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		118D6A9A2B6D395700E87E87 /* SwiftSpinner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D2FA632B32FF0100FFEE76 /* XCRemoteSwiftPackageReference "SwiftSpinner" */;
+			productName = SwiftSpinner;
+		};
+		118D6A9C2B6D395700E87E87 /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D2FA662B32FFDE00FFEE76 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+		118D6A9E2B6D395700E87E87 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D2FA692B33001000FFEE76 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		118D6AA02B6D395700E87E87 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D2FA6C2B33006900FFEE76 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		11ED438D2B3334F700876DC8 /* OSCASolingen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCASolingen;
+		};
+		11ED439B2B3338F600876DC8 /* OSCASolingen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCASolingen;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		1109D157292D3AD500CB244C /* SolingenApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1109D158292D3AD500CB244C /* SolingenApp.xcdatamodel */,
+			);
+			currentVersion = 1109D158292D3AD500CB244C /* SolingenApp.xcdatamodel */;
+			path = SolingenApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		11E11320284767D400D9248C /* Solingen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11E11321284767D400D9248C /* Solingen.xcdatamodel */,
+			);
+			currentVersion = 11E11321284767D400D9248C /* Solingen.xcdatamodel */;
+			path = Solingen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11E1130C284767D400D9248C /* Project object */;
+}

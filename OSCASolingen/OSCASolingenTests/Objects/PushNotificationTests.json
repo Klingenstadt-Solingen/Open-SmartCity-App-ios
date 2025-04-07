@@ -1,0 +1,38 @@
+{
+    "results": [
+        {
+            "objectId": "4bWvOWD9eAZRK5ve",
+            "variables": {
+                "name": "Frankfurter Damm Einm\u00fcndung Viehbachtalstra\u00dfe",
+                "date": "31.12.2022"
+            },
+            "scheduledAt": {
+                "__type": "Date",
+                "iso": "2022-12-30T08:00:00.000Z"
+            },
+            "additionalData": {
+                "linkType": "POI",
+                "objectId": "AIQ5OKnLhEMytdnb",
+                "thread-id": "cs-20221001"
+            },
+            "template": "new-construction-tomorrow",
+            "status": "sending",
+            "priority": 3,
+            "ref": "",
+            "createdAt": "2022-10-01T10:40:24.894Z",
+            "updatedAt": "2022-12-30T08:00:00.303Z",
+            "stats": {
+                "ios": {
+                    "chunk": {
+                        "total": 1
+                    }
+                },
+                "android": {
+                    "chunk": {
+                        "total": 1
+                    }
+                }
+            }
+        }
+    ]
+}

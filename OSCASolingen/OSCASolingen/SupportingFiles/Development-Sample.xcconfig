@@ -1,0 +1,53 @@
+//
+//  Development.xcconfig
+//  OSCACore
+//
+//  Created by Stephan Breidenbach on 05.07.22
+//  Version 3.0.2
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// DO NOT ADD THIS FILE TO GIT, KEEP IT LOCAL!!!
+// Path: .../SupportingFiles/Development.xcconfig
+
+// default Geo location
+// city hall location latitude
+DEFAULT_GEO_POINT_LATITUDE = 1.000000
+// city hall location longitude
+DEFAULT_GEO_POINT_LONGITUDE = 1.00000
+// Dev Parse Server URL
+PARSE_API_ROOT_URL_DEV = _SAMPLE_VALUE
+// Dev Parse API Key
+PARSE_API_KEY_DEV = _SAMPLE_VALUE
+// Dev Parse Rest API Key
+PARSE_REST_API_KEY_DEV = _SAMPLE_VALUE
+// Dev Parse Master API Key
+PARSE_MASTER_API_KEY_DEV = _SAMPLE_VALUE
+// Dev Parse application id
+PARSE_API_APPLICATION_ID_DEV = _SAMPLE_VALUE
+
+// Production Parse Server URL
+PARSE_API_ROOT_URL = _SAMPLE_VALUE
+// Procuction Parse API Key
+PARSE_API_KEY = _SAMPLE_VALUE
+// Parse Rest API Key
+PARSE_REST_API_KEY = _SAMPLE_VALUE
+// Parse Master API Key
+PARSE_MASTER_API_KEY = _SAMPLE_VALUE
+
+// Production Parse application id
+PARSE_API_APPLICATION_ID = _SAMPLE_VALUE
+
+
+// App Settings
+APP_NAME = _SAMPLE_VALUE
+APP_BUNDLE_ID = _SAMPLE_VALUE
+DEEPLINK_SCHEME = _SAMPLE_VALUE
+ENVIRONMENT = _SAMPLE_VALUE
+
+// Privacy
+CALENDARS_USAGE_DESCRIPTION = _SAMPLE_VALUE
+CAMERA_USAGE_DESCRIPTION = _SAMPLE_VALUE
+LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION = _SAMPLE_VALUE
+PHOTO_LIBRARY_USAGE_DESCRIPTION = _SAMPLE_VALUE

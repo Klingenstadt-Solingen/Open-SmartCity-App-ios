@@ -1,0 +1,119 @@
+"SHOW_ALL_BUTTON" = "Alle anzeigen";
+"show_district %@" = "%@ anzeigen";
+
+// MARK: - Onboarding Scene
+
+/* Onboarding */
+// The content for onboarding
+"onboarding_content" = "Vielen Dank, dass du diese App heruntergeladen hast. Bevor du die App nutzen kannst, haben wir noch kurz etwas zu besprechen.";
+
+/* Onboarding Privacy Advice */
+// The title for onboarding privacy advice
+"onboarding_privacy_advice_title" = "Datenschutz";
+// The content for onboarding privacy advice
+"onboarding_privacy_advice_content" = "Wir möchten, dass du weißt, dass deine Daten bei uns sicher sind. Du kannst dir auf der nächsten Seite unsere Datenschutzerklärung durchlesen. Mit der Nutzung dieser App stimmst du unserer Datenschutzerklärung zu.";
+
+/* Onboarding Privacy Policy */
+// The title for onboarding privacy policy
+"onboarding_privacy_policy_title" = "Datenschutz";
+
+/* Onboarding Notification */
+// The title for onboarding notification
+"onboarding_notification_title" = "Benachrichtigungen";
+// The content for onboarding notification
+"onboarding_notification_content" = "Wir würden dich gerne über die Dinge, die in unserer Stadt passieren, auf dem Laufenden halten. Dafür benötigen wir dein Einverständnis.";
+// The title for onboarding notification button state allow
+"onboarding_notification_allow" = "Nachrichten erlauben";
+// The title for onboarding notification button state activated
+"onboarding_notification_activated" = "Nachrichten aktiviert";
+// The title for onboarding notification button state deactivated
+"onboarding_notification_deactivated" = "Nachrichten deaktiviert";
+
+/* Onboarding Location Permission */
+// The title for onboarding location permission
+"onboarding_location_permission_title" = "Standort";
+// The content for onboarding location permission
+"onboarding_location_permission_content" = "Um dir Informationen zu deinem  aktuellen Standort zu zeigen benötigen wir deine Zustimmung.\nKeine Sorge, dein Standort wird nicht von uns gespeichert.";
+// The title for onboarding location permission button state share
+"onboarding_location_permission_share" = "Standort freigeben";
+// The title for onboarding location permission button state activated
+"onboarding_location_permission_activated" = "Standort freigegeben";
+// The title for onboarding location permission button state deactivated
+"onboarding_location_permission_deactivated" = "Standort nicht freigegeben";
+// The title for onboarding location permission alert
+"onboarding_location_permission_alert_title" = "Standortfreigabe deaktiviert!";
+// The message for onboarding location permission alert
+"onboarding_location_permission_alert_message" = "Du hast deine Standortfreigabe in den Telefoneinstellungen deaktiviert. Du kannst uns deinen Standort erst freigeben, wenn du die Einstellung änderst.";
+
+/* Onboarding Last */
+// The title for onboarding last
+"onboarding_last_title" = "Es kann losgehen";
+// The content for onboarding last
+"onboarding_last_content" = "Vielen Dank, dass du dir die Zeit genommen hast.\n\nHinterlasse uns gerne ein Feedback über das Kontaktformular, wie du unsere App findest und was du dir für die nächste Version wünschst.";
+// The title for onboarding last start button
+"onboarding_last_start_title" = "Los geht's";
+
+// MARK: - Home Tab Root Scene
+// root tab bar item home title
+"tabbaritem_home_title" = "Meine Stadt";
+/* Disabled module Corona
+// root tab bar item corona title
+"tabbaritem_corona_title" = "Corona";
+ */
+// root tab bar item townhall title
+"tabbaritem_townhall_title" = "Rathaus";
+// root tab bar item service title
+"tabbaritem_service_title" = "Services";
+// root tab bar item press title
+"tabbaritem_press_title" = "Meldungen";
+// root tab bar item settings title
+"tabbaritem_settings_title" = "Einstellungen";
+// root tab bar more title
+"tabbar_more_title" = "Mehr";
+
+
+// MARK: - Error Alert
+// The error alert title for an error
+"error_alert_title_error" = "Fehler";
+// The error alert action title to Dismiss
+"error_alert_title_dismiss" = "Abbrechen";
+// The error alert action title to Confirm
+"error_alert_title_confirm" = "Ok";
+// the error alert action title to Retry
+"error_alert_title_retry" = "Wiederholen";
+// the unknown error message text
+"unknown_error_message_text" = "Unbekannter Fehler!";
+
+// MARK: - OSCASGError descriptions
+// network invalid request error description
+"oscasgerror_networkInvalidRequest" = "Wir haben ein Internet Problem: ungültige Anfrage!";
+
+// network invalid response error description
+"oscasgerror_networkInvalidResponse" = "Wir haben ein Internet Problem: ungültige Antwort!";
+
+// network data loading error description
+"oscasgerror_networkDataLoading %d" = "Wir haben ein Internet Problem: data loading failed with status code %d";
+
+// network JSON decoding error description
+"oscasgerror_networkJSONDecoding %@" = "Wir haben ein Internet Problem: JSON decoding: %@";
+
+// network internet connection error description
+"oscasgerror_networkInternetConnection" = "Wir haben ein Internet Problem: Verbindungsfehler!";
+
+// network unspecified error description
+"oscasgerror_networkUnspecified" = "Wir haben ein unspezifisches Internet Problem!";
+
+// parse backend installation error description
+"oscasgerror_parseInstallationCorrup" = "Wir haben ein Problem mit dem Parse backend";
+
+// application initialization error description
+"oscasgerror_applicationInitialization %@" = "App-Initialisierungs Fehler: %@";
+
+// no default location error description
+"oscasgerror_noDefaultLocation" = "Es konnte kein Standort ermittelt werden";
+
+// MARK: Appointments Scene
+
+/* Appointments */
+// The screen title
+"appointments_screen_title" = "Termine";

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="yqS-CW-GsT">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="66X-N9-xJH" customClass="OnboardingViewController" customModule="OSCASolingen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="diV-FC-tbT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="sfy-vz-Trf">
+                                <rect key="frame" x="103.5" y="16" width="207" height="402"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Klingenstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F4f-HH-DHg">
+                                <rect key="frame" x="32" y="434" width="183" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <color key="textColor" name="secondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solingen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A7n-Ad-7rw">
+                                <rect key="frame" x="32" y="476" width="215.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Vielen Dank, dass du diese App heruntergeladen hast. Bevor du die App nutzen kannst, haben wir noch kurz etwas zu besprechen." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="1Cc-0p-8uN">
+                                <rect key="frame" x="32" y="556" width="316" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="X31-g1-mwv">
+                                <rect key="frame" x="32" y="804" width="170.5" height="26"/>
+                                <color key="pageIndicatorTintColor" name="primaryColor"/>
+                                <color key="currentPageIndicatorTintColor" name="secondaryColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9z-jf-DWg">
+                                <rect key="frame" x="348" y="755" width="50" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G9z-jf-DWg" secondAttribute="height" multiplier="1:1.5" id="hhd-Di-nBs"/>
+                                    <constraint firstAttribute="width" constant="50" id="oZm-Yh-sca"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTouch:" destination="66X-N9-xJH" eventType="touchUpInside" id="atJ-bc-fge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ADr-1h-oHo"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="G9z-jf-DWg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X31-g1-mwv" secondAttribute="trailing" id="3qz-b4-XU7"/>
+                            <constraint firstItem="sfy-vz-Trf" firstAttribute="width" secondItem="diV-FC-tbT" secondAttribute="width" multiplier="0.5" id="68w-Lw-3tV"/>
+                            <constraint firstItem="ADr-1h-oHo" firstAttribute="bottom" secondItem="X31-g1-mwv" secondAttribute="bottom" constant="32" id="8oC-rN-b3s"/>
+                            <constraint firstItem="ADr-1h-oHo" firstAttribute="trailing" secondItem="G9z-jf-DWg" secondAttribute="trailing" constant="16" id="A7S-bP-G0W"/>
+                            <constraint firstItem="F4f-HH-DHg" firstAttribute="centerY" secondItem="ADr-1h-oHo" secondAttribute="centerY" id="B57-Eh-VNL"/>
+                            <constraint firstItem="ADr-1h-oHo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F4f-HH-DHg" secondAttribute="trailing" constant="16" id="GJn-XC-Eb8"/>
+                            <constraint firstItem="sfy-vz-Trf" firstAttribute="top" secondItem="diV-FC-tbT" secondAttribute="top" constant="16" id="IUK-2o-iAt"/>
+                            <constraint firstItem="F4f-HH-DHg" firstAttribute="top" secondItem="sfy-vz-Trf" secondAttribute="bottom" constant="16" id="Ona-Ml-l5o"/>
+                            <constraint firstItem="F4f-HH-DHg" firstAttribute="leading" secondItem="ADr-1h-oHo" secondAttribute="leading" constant="32" id="VYW-bT-Ace"/>
+                            <constraint firstItem="X31-g1-mwv" firstAttribute="leading" secondItem="1Cc-0p-8uN" secondAttribute="leading" id="Y4Y-qM-O7v"/>
+                            <constraint firstItem="ADr-1h-oHo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A7n-Ad-7rw" secondAttribute="trailing" constant="16" id="dFD-mX-R3z"/>
+                            <constraint firstItem="sfy-vz-Trf" firstAttribute="centerX" secondItem="ADr-1h-oHo" secondAttribute="centerX" id="dFx-cE-RA0"/>
+                            <constraint firstItem="1Cc-0p-8uN" firstAttribute="top" secondItem="A7n-Ad-7rw" secondAttribute="bottom" constant="8" id="f3R-3U-ume"/>
+                            <constraint firstItem="A7n-Ad-7rw" firstAttribute="leading" secondItem="F4f-HH-DHg" secondAttribute="leading" id="kSn-Lg-sAQ"/>
+                            <constraint firstItem="1Cc-0p-8uN" firstAttribute="leading" secondItem="A7n-Ad-7rw" secondAttribute="leading" id="lAg-6M-ElR"/>
+                            <constraint firstItem="A7n-Ad-7rw" firstAttribute="top" secondItem="F4f-HH-DHg" secondAttribute="bottom" id="mWb-7l-qJQ"/>
+                            <constraint firstItem="ADr-1h-oHo" firstAttribute="bottom" secondItem="G9z-jf-DWg" secondAttribute="bottom" constant="32" id="qnK-2f-jWr"/>
+                            <constraint firstItem="X31-g1-mwv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1Cc-0p-8uN" secondAttribute="bottom" constant="16" id="uVt-1X-NU8"/>
+                            <constraint firstItem="G9z-jf-DWg" firstAttribute="leading" secondItem="1Cc-0p-8uN" secondAttribute="trailing" id="x42-eD-6My"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="1Cc-0p-8uN" id="YOl-nQ-3UK"/>
+                        <outlet property="imageView" destination="sfy-vz-Trf" id="pH4-r1-nrh"/>
+                        <outlet property="nextButton" destination="G9z-jf-DWg" id="Clg-Cu-muk"/>
+                        <outlet property="pagedControl" destination="X31-g1-mwv" id="gQV-S3-Goo"/>
+                        <outlet property="subtitleLabel" destination="A7n-Ad-7rw" id="2bU-yv-Bw4"/>
+                        <outlet property="titleLabel" destination="F4f-HH-DHg" id="NEk-eT-XPz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSd-Ye-Ywq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="placeholder_image" width="554" height="554"/>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

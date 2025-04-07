@@ -1,0 +1,491 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
+        "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "bolts-objc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/parse-community/Bolts-ObjC.git",
+      "state" : {
+        "revision" : "1eee96ad3bcfc8964c0a5815ce94f491eb6ac8c2",
+        "version" : "1.10.0"
+      }
+    },
+    {
+      "identity" : "bolts-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BoltsFramework/Bolts-Swift.git",
+      "state" : {
+        "revision" : "d8c07eee2045a13f34330c0a4664053b5176e3f0",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "devicekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devicekit/DeviceKit.git",
+      "state" : {
+        "revision" : "691fe8112cca20ebf0020a1709d4e0205400311c",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory.git",
+      "state" : {
+        "revision" : "fb04a8918848e413d3921d346a23bae7f81088d9",
+        "version" : "2.4.3"
+      }
+    },
+    {
+      "identity" : "matomo-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/matomo-org/matomo-sdk-ios.git",
+      "state" : {
+        "revision" : "15a645e11eaa8053f93749d73ced03da1e56fd01",
+        "version" : "7.5.2"
+      }
+    },
+    {
+      "identity" : "networkimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/NetworkImage",
+      "state" : {
+        "revision" : "2849f5323265386e200484b0d0f896e73c3411b9",
+        "version" : "6.0.1"
+      }
+    },
+    {
+      "identity" : "oscaanalytics-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaanalytics-ios.git",
+      "state" : {
+        "revision" : "9a5e6b0a56dbfdb550a25e05f861d4422921d6e8",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscacontact-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscacontact-ios.git",
+      "state" : {
+        "revision" : "ae9b635bead8d329193dd6d80c95aa04801d2e05",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscacontactui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscacontactui-ios.git",
+      "state" : {
+        "revision" : "9569a6b31bf8b0a9cf10b496df4321a17ebc0b82",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "oscacoworking-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscacoworking-ios.git",
+      "state" : {
+        "revision" : "b4de4542e8a5ae7c870c930ab1a7a898f800b74c",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscacoworkingui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscacoworkingui-ios.git",
+      "state" : {
+        "revision" : "9a28ba602cde39602da7d09fab8515b1097ecf0f",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscaculture-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaculture-ios.git",
+      "state" : {
+        "revision" : "f712b786bfed57c558778ffb552ebbcaf263613a",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "oscacultureui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscacultureui-ios.git",
+      "state" : {
+        "revision" : "5959086a6900adc45c383ad0c53cb659d0a1a6e2",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "oscadefect-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscadefect-ios.git",
+      "state" : {
+        "revision" : "3546b7637c8f19b1a710c9a96610ebad6d3ac3b2",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "oscadefectui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscadefectui-ios.git",
+      "state" : {
+        "revision" : "f5bac61396d1f2b7049a80172381cec26d7c31d3",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "oscadistrict-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscadistrict-ios.git",
+      "state" : {
+        "revision" : "e0bcc4094cc03f248bba127e31933a0c85ee2f21",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "oscaenvironment-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaenvironment-ios.git",
+      "state" : {
+        "revision" : "9580afefa78f506f1e74ddf5728bc5d6e8ef872a",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscaevents-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaevents-ios.git",
+      "state" : {
+        "revision" : "5893512ad8c3743d12cc7b1c9f5bb83044a07eb1",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "oscaeventsui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaeventsui-ios.git",
+      "state" : {
+        "revision" : "cebfa829656513c084c46437c1b5ffcda219b4aa",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "oscajobs-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscajobs-ios.git",
+      "state" : {
+        "revision" : "df5a03e2fd715ad80b1a3de2b9ed85529abc71f9",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscajobsui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscajobsui-ios.git",
+      "state" : {
+        "revision" : "eeed9e0b400462bd24ea91b327e7363722f86bd8",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscamap-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscamap-ios.git",
+      "state" : {
+        "revision" : "f780fc336a181d40e3ba25d1d2d0bf648d46a483",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "oscamapui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscamapui-ios.git",
+      "state" : {
+        "revision" : "a72c0bba008155621dc929fe48d4b92f4ad32a80",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "oscamobilitymonitor-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscamobilitymonitor-ios.git",
+      "state" : {
+        "revision" : "2ad4d037d6c792c37e028baba67e7a9af550bfd5",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "oscamobilitymonitorui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscamobilitymonitorui-ios.git",
+      "state" : {
+        "revision" : "4cbbda0a2b0026b8860ba2554aeef7d8b59db3b0",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "oscanetworkservice-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscanetworkservice-ios.git",
+      "state" : {
+        "revision" : "45a19f420a2234d8e7fe8d0d1752793d5c27dd8a",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscapressreleases-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscapressreleases-ios.git",
+      "state" : {
+        "revision" : "efcd985dce0a5aa6d4099e67c74c8fc6a9b0950d",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "oscapressreleasesui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscapressreleasesui-ios.git",
+      "state" : {
+        "revision" : "ca8991dd017073ec4e95943d3063b0e55d2362e6",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "oscapublictransport-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscapublictransport-ios.git",
+      "state" : {
+        "revision" : "7aad774be14801b3415d9186f3ab15c27ae5bc2d",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscapublictransportui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscapublictransportui-ios.git",
+      "state" : {
+        "revision" : "c4f96ed356897f8a96c67909a87bf126063c0026",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscasafariview-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscasafariview-ios.git",
+      "state" : {
+        "revision" : "7a20af26756876e55e62487543d249b884c14192",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscatemplate-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscatemplate-ios.git",
+      "state" : {
+        "revision" : "fd12586a862849a3de310a09da1ca5a83c7d6d10",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscatestcaseextension-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscatestcaseextension-ios.git",
+      "state" : {
+        "revision" : "f2014fc336257435f186342557b26227d438cc1b",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "oscawaste-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscawaste-ios.git",
+      "state" : {
+        "revision" : "617e7e12aec401dfe32b61b0b87e18ea3029aba0",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "oscawasteui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscawasteui-ios.git",
+      "state" : {
+        "revision" : "e6084fb29096347421d3ffdd71830b53c5826a6b",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "oscaweather-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaweather-ios.git",
+      "state" : {
+        "revision" : "6704f9f904599dcac72686ed0f56fa5ab627eee6",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "oscaweatherui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git-dev.solingen.de/smartcityapp/modules/oscaweatherui-ios.git",
+      "state" : {
+        "revision" : "2e17321a3bbcb1ce59f296148964177ba99b3c2f",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "papyrus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joshuawright11/papyrus.git",
+      "state" : {
+        "revision" : "0a424d90f7a31b40e3b850a58062bb3aa701323f",
+        "version" : "0.6.16"
+      }
+    },
+    {
+      "identity" : "parse-sdk-ios-osx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/parse-community/Parse-SDK-iOS-OSX.git",
+      "state" : {
+        "revision" : "e5d072f37b9b7ca017334dddcf9f775cdcc8f52d",
+        "version" : "4.1.1"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "8a1be70a625683bc04d6903e2935bf23f3c6d609",
+        "version" : "5.19.7"
+      }
+    },
+    {
+      "identity" : "sdwebimagesvgcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSVGCoder.git",
+      "state" : {
+        "revision" : "950167445ab703740569869c8b7510efc9d09a26",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "53573d6dd017e354c0e7d8f1c86b77ef1383c996",
+        "version" : "2.2.7"
+      }
+    },
+    {
+      "identity" : "sdwebimagevideocoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageVideoCoder.git",
+      "state" : {
+        "revision" : "117eda8a4872c34dd136b5a673b39058d495a13d",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "sentry-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/getsentry/sentry-cocoa",
+      "state" : {
+        "revision" : "5575af93efb776414f243e93d6af9f6258dc539a",
+        "version" : "8.36.0"
+      }
+    },
+    {
+      "identity" : "skyfloatinglabeltextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Skyscanner/SkyFloatingLabelTextField.git",
+      "state" : {
+        "revision" : "82c0bbbc4e1368901b171292c220690273460f4b",
+        "version" : "3.8.0"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "c6bfd1af48efcc9a9ad203665db12375ba6b145a",
+        "version" : "4.0.8"
+      }
+    },
+    {
+      "identity" : "swift-atomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-atomics.git",
+      "state" : {
+        "revision" : "ff3d2212b6b093db7f177d0855adbc4ef9c5f036",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-cmark",
+      "state" : {
+        "revision" : "3ccff77b2dc5b96b77db3da0d68d28068593fa53",
+        "version" : "0.5.0"
+      }
+    },
+    {
+      "identity" : "swift-markdown-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/swift-markdown-ui",
+      "state" : {
+        "revision" : "5f613358148239d0292c0cef674a3c2314737f9e",
+        "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "2bc86522d115234d1f588efe2bcb4ce4be8f8b82",
+        "version" : "510.0.3"
+      }
+    },
+    {
+      "identity" : "swiftdate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftDate.git",
+      "state" : {
+        "revision" : "5d943224c3bb173e6ecf27295611615eba90c80e",
+        "version" : "7.0.0"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup.git",
+      "state" : {
+        "revision" : "6778575285177365cbad3e5b8a72f2a20583cfec",
+        "version" : "2.4.3"
+      }
+    },
+    {
+      "identity" : "swiftspinner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/icanzilb/SwiftSpinner.git",
+      "state" : {
+        "revision" : "f6cfeb6f1780571bdef8bdaf924ccdb573d23e33",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

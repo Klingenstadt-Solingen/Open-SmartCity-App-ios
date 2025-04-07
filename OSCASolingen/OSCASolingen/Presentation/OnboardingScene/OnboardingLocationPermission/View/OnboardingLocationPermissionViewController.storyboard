@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Location Permission View Controller-->
+        <scene sceneID="kx2-TY-jEs">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingLocationPermissionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hi6-lY-Lhi" customClass="OnboardingLocationPermissionViewController" customModule="OSCASolingen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F5O-Bh-ybr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_current_location_rypt-svg" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-x8-itk">
+                                <rect key="frame" x="103.5" y="64" width="207" height="357"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6W-xK-JDN">
+                                <rect key="frame" x="32" y="437" width="109.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgI-G4-hQK">
+                                <rect key="frame" x="32" y="481" width="316" height="101.5"/>
+                                <string key="text">Um dir Informationen zu deinem  aktuellen Standort zu zeigen benötigen wir deine Zustimmung. 
+Keine Sorge, dein Standort wird nicht von uns gespeichert.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dy-Ay-lhM">
+                                <rect key="frame" x="32" y="748" width="316" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dBs-Qm-iIP"/>
+                                </constraints>
+                                <state key="normal" title="Standort freigeben">
+                                    <color key="titleColor" name="primaryColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="grantButtonTouch:" destination="hi6-lY-Lhi" eventType="touchUpInside" id="cTQ-l2-x4r"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="eBO-f6-mDp">
+                                <rect key="frame" x="32" y="804" width="170.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="primaryColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfn-VZ-noc">
+                                <rect key="frame" x="348" y="755" width="50" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="NO2-XX-Dh7"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTouch:" destination="hi6-lY-Lhi" eventType="touchUpInside" id="9vE-8A-qQW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yM5-c4-8Fx"/>
+                        <color key="backgroundColor" name="secondaryColor"/>
+                        <constraints>
+                            <constraint firstItem="cfn-VZ-noc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eBO-f6-mDp" secondAttribute="trailing" id="1rB-iG-KI2"/>
+                            <constraint firstItem="7Og-x8-itk" firstAttribute="centerX" secondItem="yM5-c4-8Fx" secondAttribute="centerX" id="3vb-E8-PEo"/>
+                            <constraint firstItem="eBO-f6-mDp" firstAttribute="top" secondItem="7Dy-Ay-lhM" secondAttribute="bottom" constant="16" id="4eT-im-1ec"/>
+                            <constraint firstItem="cfn-VZ-noc" firstAttribute="width" secondItem="cfn-VZ-noc" secondAttribute="height" multiplier="1:1.5" id="5Ix-kx-VvT"/>
+                            <constraint firstItem="cfn-VZ-noc" firstAttribute="leading" secondItem="7Dy-Ay-lhM" secondAttribute="trailing" id="6Or-4M-ZoJ"/>
+                            <constraint firstItem="7Dy-Ay-lhM" firstAttribute="leading" secondItem="A6W-xK-JDN" secondAttribute="leading" id="7dk-pC-K6P"/>
+                            <constraint firstItem="yM5-c4-8Fx" firstAttribute="trailing" secondItem="cfn-VZ-noc" secondAttribute="trailing" constant="16" id="AgK-0b-gpS"/>
+                            <constraint firstItem="A6W-xK-JDN" firstAttribute="centerY" secondItem="yM5-c4-8Fx" secondAttribute="centerY" id="CFL-I4-s1E"/>
+                            <constraint firstItem="yM5-c4-8Fx" firstAttribute="bottom" secondItem="eBO-f6-mDp" secondAttribute="bottom" constant="32" id="Cnj-KL-hs3"/>
+                            <constraint firstItem="yM5-c4-8Fx" firstAttribute="bottom" secondItem="cfn-VZ-noc" secondAttribute="bottom" constant="32" id="Db1-bT-lU2"/>
+                            <constraint firstItem="eBO-f6-mDp" firstAttribute="leading" secondItem="hgI-G4-hQK" secondAttribute="leading" id="EQc-PZ-rbK"/>
+                            <constraint firstItem="A6W-xK-JDN" firstAttribute="top" secondItem="7Og-x8-itk" secondAttribute="bottom" constant="16" id="H4J-NH-VOq"/>
+                            <constraint firstItem="hgI-G4-hQK" firstAttribute="leading" secondItem="A6W-xK-JDN" secondAttribute="leading" id="OEa-CN-OoW"/>
+                            <constraint firstItem="hgI-G4-hQK" firstAttribute="top" secondItem="A6W-xK-JDN" secondAttribute="bottom" constant="8" id="PuV-4f-Jef"/>
+                            <constraint firstItem="7Dy-Ay-lhM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hgI-G4-hQK" secondAttribute="bottom" constant="16" id="XWk-pm-DtF"/>
+                            <constraint firstItem="7Og-x8-itk" firstAttribute="width" secondItem="F5O-Bh-ybr" secondAttribute="width" multiplier="0.5" id="aPk-J3-Pma"/>
+                            <constraint firstItem="yM5-c4-8Fx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A6W-xK-JDN" secondAttribute="trailing" constant="16" id="gWj-3T-zzP"/>
+                            <constraint firstItem="cfn-VZ-noc" firstAttribute="leading" secondItem="hgI-G4-hQK" secondAttribute="trailing" id="ggw-h0-N2C"/>
+                            <constraint firstItem="7Og-x8-itk" firstAttribute="top" secondItem="yM5-c4-8Fx" secondAttribute="top" constant="16" id="jh4-dD-n3B"/>
+                            <constraint firstItem="A6W-xK-JDN" firstAttribute="leading" secondItem="yM5-c4-8Fx" secondAttribute="leading" constant="32" id="ptD-CD-e9p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="hgI-G4-hQK" id="SBr-Ug-Da9"/>
+                        <outlet property="grantButton" destination="7Dy-Ay-lhM" id="g2D-Ac-yOs"/>
+                        <outlet property="headerLabel" destination="A6W-xK-JDN" id="SMI-H5-ado"/>
+                        <outlet property="locationImage" destination="7Og-x8-itk" id="wuh-BB-xYF"/>
+                        <outlet property="nextButton" destination="cfn-VZ-noc" id="dyE-QJ-5U3"/>
+                        <outlet property="pagedControl" destination="eBO-f6-mDp" id="IjK-Ak-TSl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ck-lK-vbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113.04347826087" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="undraw_current_location_rypt-svg" width="950" height="768"/>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="0.83529411764705885" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

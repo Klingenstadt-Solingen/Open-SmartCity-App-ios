@@ -1,0 +1,43 @@
+{
+    "results": [
+        {
+            "objectId": "cAXIjDmWeCGJSwac",
+            "channels": [
+                "meldungen"
+            ],
+            "templateId": "new-press-release",
+            "description": "New Press Release",
+            "title": "{{title}}",
+            "body": "{{summary}}",
+            "category": "PRESS_RELEASE",
+            "createdAt": "2022-09-30T20:14:41.585Z",
+            "updatedAt": "2022-09-30T20:14:41.585Z"
+        },
+        {
+            "objectId": "REiFPOVvtWIMbqyW",
+            "channels": [
+                "baustellen"
+            ],
+            "templateId": "new-construction-tomorrow",
+            "body": "{{name}}",
+            "title": "Ab morgen gibt es eine neue Baustelle \ud83d\udea7",
+            "description": "New Construction",
+            "category": "CONSTRUCTION_INFO",
+            "createdAt": "2022-09-30T20:14:42.875Z",
+            "updatedAt": "2022-09-30T20:14:42.875Z"
+        },
+        {
+            "objectId": "ZYPXwfvcPTYoovhd",
+            "channels": [
+                "coronastats"
+            ],
+            "templateId": "coronastats",
+            "description": "Corona Stats Daily",
+            "title": "Neue Coronazahlen",
+            "body": "Die neuen Coronazahlen f\u00fcr heute sind ver\u00f6ffentlicht",
+            "category": "CORONA_INFO",
+            "createdAt": "2022-09-30T20:14:42.876Z",
+            "updatedAt": "2022-09-30T20:14:42.876Z"
+        }
+    ]
+}

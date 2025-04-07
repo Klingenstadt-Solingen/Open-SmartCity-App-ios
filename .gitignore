@@ -1,0 +1,78 @@
+## Xcode
+.DS_Store
+
+## VSCode
+.vscode
+
+## Build generated
+build/
+DerivedData/
+build.log
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xcuserstate
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Package Manager
+.build/
+.swiftpm/
+# Package.resolved
+
+## CocoaPods
+Pods/
+
+## Carthage
+Carthage/Build
+
+## Jazzy docs
+# docs/
+
+## Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/test_output
+
+/scripts
+
+
+## supporting Files secrets
+OSCASolingen/OSCASolingen/SupportingFiles/Development.xcconfig
+OSCASolingen/OSCASolingen/SupportingFiles/Production.xcconfig
+OSCASolingen/OSCASolingenTests/Resources/API_Develop.plist
+OSCASolingen/OSCASolingenTests/Resources/API_Release.plist
+OSCASolingen/OSCASolingen/Resources/API_Develop.plist
+OSCASolingen/OSCASolingen/Resources/API_Release.plist
+
+SupportingFiles/Development.xcconfig
+SupportingFiles/Production.xcconfig
+SupportingFiles/API_Develop.plist
+SupportingFiles/API_Release.plist
+SupportingFiles/first.apn
+SupportingFiles/parse-dev.json
+SupportingFiles/parse-prod.json
+
+# workspace
+OSCASG.xcworkspace/xcshareddata/swiftpm/# Package.resolved
+
+schemas.json
